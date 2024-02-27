@@ -1,0 +1,33 @@
+.footer-header-main-div {
+  margin-top: 20px;
+  width: 100%;
+}
+.footer-inner-main-div img {
+  width: 100%;
+}
+.footer-header-title-div {
+  width: 80%;
+  margin: 40px auto;
+}
+.footer-header-title-div h2 {
+  font-size: 40px;
+  font-weight: normal;
+  letter-spacing: 5px;
+  margin-bottom: 20px;
+}
+.footer-header-ul {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  font-size: 18px;
+}
+.footer-header-ul li {
+  list-style-type: none;
+}
+.footer-header-ul li:hover {
+  cursor: pointer;
+}
+.selected {
+  border-bottom: 1px solid black;
+  padding-bottom: 7px;
+}

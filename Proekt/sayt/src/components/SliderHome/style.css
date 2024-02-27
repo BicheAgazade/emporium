@@ -1,0 +1,94 @@
+.mySwiper-2 {
+  width: 100%;
+  height: 600px;
+  margin-top: 120px;
+}
+
+.slider-2 img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  color: black;
+}
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  color: #999;
+}
+
+.slider-2 {
+  position: relative;
+}
+
+.chloe-div {
+  position: absolute;
+  width: 30%;
+  bottom: 100px;
+  right: 50px;
+  z-index: 999;
+  text-align: justify;
+}
+.chloe-div p,
+.mancera-div p,
+.amouage-div p,
+.ysl-div p {
+  line-height: 25px;
+  margin: 15px 0;
+  font-size: 18px;
+}
+.chloe-div h2,
+.ysl-div h2 {
+  color: rgb(227, 207, 207);
+}
+
+.chloe-btn,
+.amouage-btn {
+  background-color: transparent;
+  border: 1px solid black;
+  padding: 5px 25px;
+  border-radius: 8px;
+  transition: 0.5s;
+  font-size: 15px;
+}
+
+.chloe-btn:hover {
+  background-color: rgb(227, 207, 207);
+  color: black;
+  border: 1px solid rgb(227, 207, 207);
+}
+
+.mancera-div,
+.ysl-div {
+  position: absolute;
+  width: 30%;
+  top: 100px;
+  left: 50px;
+  z-index: 999;
+  text-align: justify;
+}
+.amouage-div {
+  position: absolute;
+  width: 30%;
+  bottom: 100px;
+  right: 50px;
+  z-index: 999;
+  text-align: justify;
+}
+.amouage-div p,
+.ysl-div p {
+  color: white;
+}
+.amouage-div h2 {
+  color: white;
+}
+.amouage-btn {
+  border: 1px solid white;
+  color: white;
+}
+.amouage-btn:hover {
+  background-color: black;
+  border: 1px solid black;
+}

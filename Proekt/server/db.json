@@ -1,0 +1,799 @@
+{
+  "designers": [
+    {
+      "id": "1",
+      "name": "Alexandre.J"
+    },
+    {
+      "id": "2",
+      "name": "BDK"
+    },
+    {
+      "id": "3",
+      "name": "Chloe"
+    },
+    {
+      "id": "4",
+      "name": "Estee Lauder"
+    },
+    {
+      "id": "5",
+      "name": "Giorgio Armani"
+    },
+    {
+      "id": "6",
+      "name": "HFC"
+    },
+    {
+      "id": "7",
+      "name": "Initio"
+    },
+    {
+      "id": "8",
+      "name": "Jo Malone"
+    },
+    {
+      "id": "9",
+      "name": "Kilian"
+    },
+    {
+      "id": "10",
+      "name": "Lancome"
+    },
+    {
+      "id": "11",
+      "name": "Amouage"
+    },
+    {
+      "id": "12",
+      "name": "Boss"
+    },
+    {
+      "id": "13",
+      "name": "Boadicea the Victorious"
+    },
+    {
+      "id": "14",
+      "name": "Etro"
+    },
+    {
+      "id": "15",
+      "name": "Givenchy"
+    },
+    {
+      "id": "16",
+      "name": "Jimmy Choo"
+    },
+    {
+      "id": "17",
+      "name": "Mancera"
+    },
+    {
+      "id": "18",
+      "name": "Montale"
+    },
+    {
+      "id": "19",
+      "name": "Memo"
+    },
+    {
+      "id": "20",
+      "name": "Maison Margiela"
+    },
+    {
+      "id": "21",
+      "name": "Nasomatto"
+    },
+    {
+      "id": "22",
+      "name": "Nishane"
+    },
+    {
+      "id": "23",
+      "name": "Orlov"
+    },
+    {
+      "id": "24",
+      "name": "Ojar"
+    },
+    {
+      "id": "25",
+      "name": "Orto Parisi"
+    },
+    {
+      "id": "26",
+      "name": "Prada"
+    },
+    {
+      "id": "27",
+      "name": "Yves Saint Laurent"
+    },
+    {
+      "id": "28",
+      "name": "Tiziana Terenzi"
+    },
+    {
+      "id": "29",
+      "name": "Tom Ford"
+    },
+    {
+      "id": "30",
+      "name": "Valentino"
+    },
+    {
+      "id": "31",
+      "name": "V-Canto"
+    },
+    {
+      "id": "32",
+      "name": "Widian by AJ Arabia"
+    }
+  ],
+  "product": [
+    {
+      "brand": "Alexandre.J",
+      "name": "The Majestic Musk Eau de parfum",
+      "price": 270,
+      "size": "100ML",
+      "notes": [
+        "Top notes are Raspberry, Toffee, Lemon and Apple",
+        "Middle notes are Rose, White Woods, Patchouli and Saffron",
+        "Base notes are Musk, Vanilla and Amber"
+      ],
+      "designerId": 1,
+      "category": "woman",
+      "new": true,
+      "bestseller": false,
+      "img": "https://cdn2.emporium.az/i/p/500/239099-746213cd70d7b6b3ce86c0ce423ac685.jpg",
+      "imegs": [
+        "https://cdn2.emporium.az/i/p/500/239099-746213cd70d7b6b3ce86c0ce423ac685.jpg",
+        "https://cdn2.emporium.az/i/p/500/239099-27263994af76e42a114559732e4f226a.jpg",
+        "https://cdn2.emporium.az/i/p/500/239099-d34303672d91fd42c5aec7c59987def5.jpg"
+      ],
+      "id": "8375"
+    },
+    {
+      "brand": "BDK",
+      "name": "Pas Ce Soir",
+      "price": 365,
+      "size": "100ML",
+      "notes": [
+        "Top notes are ginger, mandarin orange and black pepper",
+        "Middle notes are quince, moroccan jasmine and orange blossom",
+        "Base notes are cashmeran, amberwood and singapore patchouli"
+      ],
+      "designerId": 2,
+      "category": "woman",
+      "new": false,
+      "bestseller": true,
+      "img": "https://cdn2.emporium.az/i/p/500/217283-80856341a9bcedf0cac8fec6a36d361f.jpg",
+      "imegs": [
+        "https://cdn2.emporium.az/i/p/500/217283-80856341a9bcedf0cac8fec6a36d361f.jpg",
+        "https://cdn2.emporium.az/i/p/500/217283-cbde49e38a321503ccfce953100fe454.jpg"
+      ],
+      "id": "3d44"
+    },
+    {
+      "brand": "Chloe",
+      "name": "Love Story Eau De Parfum",
+      "price": 210,
+      "size": "50ML",
+      "notes": [
+        "Top notes: neroli, pear, bergamot, grapefruit and lemon",
+        "Middle notes: orange blossom, stephanotis, rose, peach, black currant",
+        "Base notes: musk, cedar, cashmirwood, patchouli"
+      ],
+      "designerId": 3,
+      "category": "woman",
+      "new": false,
+      "bestseller": false,
+      "img": "https://cdn2.emporium.az/i/p/500/272111-0d9b2e7d5e1cb2191eea1b93b1b474da.jpg",
+      "imegs": [
+        "https://cdn2.emporium.az/i/p/500/272111-0d9b2e7d5e1cb2191eea1b93b1b474da.jpg"
+      ],
+      "id": "0f72"
+    },
+    {
+      "brand": "Estee Lauder",
+      "name": "Pleasures",
+      "price": 255,
+      "size": "100ML",
+      "notes": [
+        "Top notes: are green notes, freesia, pink pepper, violet, violet leaf, tuberose and red berries",
+        "Middle notes: are lily-of-the-valley, peony, lilac, lily, rose, jasmine, geranium and karo karounde",
+        "Base notes: are musk, cedar, sandalwood and patchouli"
+      ],
+      "designerId": 4,
+      "category": "woman",
+      "new": true,
+      "bestseller": false,
+      "img": "https://cdn2.emporium.az/i/p/500/163010-p1euc555ir1lmj13u31ieb1u65ihe7.jpg",
+      "imegs": [
+        "https://cdn2.emporium.az/i/p/500/163010-p1euc555ir1lmj13u31ieb1u65ihe7.jpg"
+      ],
+      "id": "74f3"
+    },
+    {
+      "brand": "Giorgio Armani",
+      "name": "My Way Le Parfum",
+      "price": 405,
+      "size": "90ML",
+      "notes": [
+        "Top notes: are orange blossom, bitter orange, and Calabrian bergamot",
+        "Middle notes: are iris pallida, indian tuberose and ambrette (musk mallow)",
+        "Base notes: are white musk, bourbon vanilla, and cedar"
+      ],
+      "designerId": 5,
+      "category": "woman",
+      "new": false,
+      "bestseller": true,
+      "img": "https://cdn2.emporium.az/i/p/500/274436-7c05a814897d68aab3c25fce9737fc7e.jpg",
+      "imegs": [
+        "https://cdn2.emporium.az/i/p/500/274436-7c05a814897d68aab3c25fce9737fc7e.jpg",
+        "https://cdn2.emporium.az/i/p/500/274436-0f312bc3b4da1e97dc5250233228727a.jpg"
+      ],
+      "id": "7272"
+    },
+    {
+      "brand": "HFC",
+      "name": "Great Way Eau de Parfum",
+      "price": 680,
+      "size": "75ML",
+      "notes": [
+        "Top notes: Ginger, Saffron, Sichuan pepper, Cardamom",
+        "Middle notes: Hemp, Dates, Magnolia, Ambergris",
+        "Base notes: Oud, Sandalwood"
+      ],
+      "designerId": 6,
+      "category": "unisex",
+      "new": true,
+      "bestseller": true,
+      "img": "https://cdn2.emporium.az/i/p/500/279912-daade44f8f228fd649f08f1c941157ec.jpg",
+      "imegs": [
+        "https://cdn2.emporium.az/i/p/500/279912-daade44f8f228fd649f08f1c941157ec.jpg",
+        "https://cdn2.emporium.az/i/p/500/279912-dd51ad63d57d0eb22927dba4ad2b292c.jpg",
+        "https://cdn2.emporium.az/i/p/500/279912-183b75380abdcffed94e4b1480fdf4a0.jpg"
+      ],
+      "id": "c8ab"
+    },
+    {
+      "brand": "Initio",
+      "name": "Oud for Happiness Eau de Parfum",
+      "price": 740,
+      "size": "90ML",
+      "notes": [
+        "Top notes: are Bergamot and Ginger",
+        "Middle notes: are Licorice, Agarwood (Oud) and Cedar",
+        "Base notes: are Vanilla, Musk and Herbal Notes"
+      ],
+      "designerId": 7,
+      "category": "unisex",
+      "new": false,
+      "bestseller": true,
+      "img": "https://cdn2.emporium.az/i/p/500/250538-32957defbb7ed21ee0b18739d2783097.jpg",
+      "imegs": [
+        "https://cdn2.emporium.az/i/p/500/250538-32957defbb7ed21ee0b18739d2783097.jpg",
+        "https://cdn2.emporium.az/i/p/500/250538-279bac124d4557a56c0558eccf8f65ea.jpg"
+      ],
+      "id": "dd50"
+    },
+    {
+      "brand": "Jo Malone",
+      "name": "English Pear & Freesia Cologne",
+      "price": 195,
+      "size": "50ML",
+      "notes": [
+        "Top notes: Pear, Melon",
+        "Middle notes:  Freesia, Rose",
+        "Base notes: Musk, Patchouli, Rhubarb, Amber"
+      ],
+      "designerId": 8,
+      "category": "woman",
+      "new": false,
+      "bestseller": true,
+      "img": "https://cdn2.emporium.az/i/p/500/279876-f9437976924c63190f25239aef35bbdb.jpg",
+      "imegs": [
+        "https://cdn2.emporium.az/i/p/500/279876-f9437976924c63190f25239aef35bbdb.jpg",
+        "https://cdn2.emporium.az/i/p/500/279876-499979509731936deee19fcb9a6802b5.jpg"
+      ],
+      "id": "ad4f"
+    },
+    {
+      "brand": "Kilian Paris",
+      "name": "Apple Brandy Eau de Parfume",
+      "price": 800,
+      "size": "100ML",
+      "notes": [
+        "Kilian Apple Brandy On The Rocks is a refreshing fruity fruity unisex fragrance launched in 2021 by French perfume house Kilian. With this fragrance, the brand expands The Liquors perfume collection, inspired by the rich aromas of alcoholic beverages. At the same time, fresh notes, reminiscent of a sip of sparkling citrus, water notes or refreshing aldehydes, bring freshness, lightness and serenity to these compositions."
+      ],
+      "designerId": 9,
+      "category": "unisex",
+      "new": false,
+      "bestseller": true,
+      "img": "https://cdn2.emporium.az/i/p/500/259051-1039addc77ee42f22867a8e1e8e31b3d.jpg",
+      "imegs": [
+        "https://cdn2.emporium.az/i/p/500/259051-1039addc77ee42f22867a8e1e8e31b3d.jpg"
+      ],
+      "id": "7179"
+    },
+    {
+      "brand": "Lancome",
+      "name": "La Vie Est Belle En Rose Eau De Toilette",
+      "price": 290,
+      "size": "100ML",
+      "notes": [
+        "Top notes: red fruits bring a colorful, juicy and slightly acidic effect to the zesty bergamot",
+        "Middle notes: peony and roses from grasse compliment this iris gourmand to create a floral, rose blooming heart",
+        "Base notes: sandalwood oil and patchouli add creaminess and sensuality to the dry down, and the addition of musk giving a soft, second-skin effect"
+      ],
+      "designerId": 10,
+      "category": "woman",
+      "new": false,
+      "bestseller": false,
+      "img": "https://cdn2.emporium.az/i/p/500/273304-04bf4bf1d49bbcaa2fe9175b7b8d9016.jpg",
+      "imegs": [
+        "https://cdn2.emporium.az/i/p/500/273304-04bf4bf1d49bbcaa2fe9175b7b8d9016.jpg",
+        "https://cdn2.emporium.az/i/p/500/273304-dde5f2eadf70baa2aab0a35550c94e97.jpg"
+      ],
+      "id": "862d"
+    },
+    {
+      "brand": "Amouage",
+      "name": "Portrayal Eau de Parfum",
+      "price": 790,
+      "size": "100ML",
+      "notes": [
+        "Top notes: violet leaves",
+        "Middle notes: vetiver",
+        "Base notes: cade"
+      ],
+      "designerId": 11,
+      "category": "man",
+      "new": true,
+      "bestseller": false,
+      "img": "https://cdn2.emporium.az/i/p/500/231206-4a0dd1c4ea7411df8c75e80f5040fc4b.jpg",
+      "imegs": [
+        "https://cdn2.emporium.az/i/p/500/231206-4a0dd1c4ea7411df8c75e80f5040fc4b.jpg"
+      ],
+      "id": "df43"
+    },
+    {
+      "brand": "Boss",
+      "name": "Boss Bottled Eau de Toilette",
+      "price": 210,
+      "size": "100ML",
+      "notes": [
+        "Top notes: Apple, Plum, Lemon, Bergamot, Oakmoss, Geranium",
+        "Middle notes:  Cinnamon, Mahogany, Cloves",
+        "Base notes: Vanilla, Sandalwood, Cedar, Vetiver, Olive tree"
+      ],
+      "designerId": 12,
+      "category": "man",
+      "new": false,
+      "bestseller": true,
+      "img": "https://cdn2.emporium.az/i/p/500/269380-6622176b0bcdc58fcd788d8e26b7731a.jpg",
+      "imegs": [
+        "https://cdn2.emporium.az/i/p/500/269380-6622176b0bcdc58fcd788d8e26b7731a.jpg"
+      ],
+      "id": "14a7"
+    },
+    {
+      "brand": "Boadicea the Victorious",
+      "name": "Your majesty Eau de Parfum",
+      "price": 1285,
+      "size": "100ML",
+      "notes": [
+        "Top notes: bergamot, grapefruit",
+        "Middle notes:  rosemary, black pepper",
+        "Base notes: musk, amber, sandalwood"
+      ],
+      "designerId": 13,
+      "category": "unisex",
+      "new": false,
+      "bestseller": false,
+      "img": "https://cdn2.emporium.az/i/p/500/271632-2596d835964699cee60c3170102773ac.jpg",
+      "imegs": [
+        "https://cdn2.emporium.az/i/p/500/271632-2596d835964699cee60c3170102773ac.jpg",
+        "https://cdn2.emporium.az/i/p/500/271632-3d7bebf28c28a5d262cd8eb32fc274c2.jpg"
+      ],
+      "id": "6c0f"
+    },
+    {
+      "brand": "Etro",
+      "name": "Rajasthan Eau de Parfum",
+      "price": 330,
+      "size": "100ML",
+      "notes": [
+        "Top notes: pink pepper, lemon & purslane",
+        "Middle notes:  mimosa, damask rose, white locust and black currant",
+        "Base notes: are white musk, amber & labdanum"
+      ],
+      "designerId": 14,
+      "category": "woman",
+      "new": true,
+      "bestseller": false,
+      "img": "https://cdn2.emporium.az/i/p/500/257252-8c7eb822d891fbd717fc37b48b3a38a9.jpg",
+      "imegs": [
+        "https://cdn2.emporium.az/i/p/500/257252-8c7eb822d891fbd717fc37b48b3a38a9.jpg"
+      ],
+      "id": "b1c9"
+    },
+    {
+      "brand": "Givenchy",
+      "name": "Live Irresistible Blossom Crush Eau De Toilette",
+      "price": 175,
+      "size": "50ML",
+      "notes": [
+        "Top notes: bitter orange and bergamot",
+        "Middle notes: peony, apple, blackcurrant, raspberry and rose",
+        "Base notes: are cocoa, vanilla, musk, cashmeran & amberwood"
+      ],
+      "designerId": 15,
+      "category": "woman",
+      "new": true,
+      "bestseller": true,
+      "img": "https://cdn2.emporium.az/i/p/500/239638-b4ee49daa30417189e477f25836c7310.jpg",
+      "imegs": [
+        "https://cdn2.emporium.az/i/p/500/239638-b4ee49daa30417189e477f25836c7310.jpg"
+      ],
+      "id": "b2dd"
+    },
+    {
+      "brand": "Jimmy Choo",
+      "name": "Blossom Special Edition Eau de Parfum",
+      "price": 130,
+      "size": "60ML",
+      "notes": [
+        "Top notes: citrus notes, red berries, raspberry",
+        "Middle notes: rose, sweet pea",
+        "Base notes: sandalwood, musk"
+      ],
+      "designerId": 16,
+      "category": "woman",
+      "new": false,
+      "bestseller": true,
+      "img": "https://cdn2.emporium.az/i/p/500/267806-8ab436b04b22d5ef2d6039af450bb3df.jpg",
+      "imegs": [
+        "https://cdn2.emporium.az/i/p/500/267806-8ab436b04b22d5ef2d6039af450bb3df.jpg"
+      ],
+      "id": "c9c6"
+    },
+    {
+      "brand": "Mancera",
+      "name": "Wild Candy",
+      "price": 540,
+      "size": "120ML",
+      "notes": [
+        "Top notes: are fruity notes, chocolate, bergamot and lemon",
+        "Middle notes: are frangipani and turkish rose",
+        "Base notes: are vanilla, white musk, guaiac wood, salt and"
+      ],
+      "designerId": 17,
+      "category": "man",
+      "new": false,
+      "bestseller": false,
+      "img": "https://cdn2.emporium.az/i/p/500/164865-p1fi4m2jaj1vnedqo193858e3r89.jpg",
+      "imegs": [
+        "https://cdn2.emporium.az/i/p/500/164865-p1fi4m2jaj1vnedqo193858e3r89.jpg"
+      ],
+      "id": "00d6"
+    },
+    {
+      "brand": "Montale",
+      "name": "Montale Oudmazing Eau de Parfum",
+      "price": 340,
+      "size": "100ML",
+      "notes": [
+        "Top notes: are agarwood, fig, pear, Sicilian orange, and Sicilian bergamot",
+        "Middle notes: are patchouli leaf, orris, and Egyptian jasmine",
+        "Base notes: are grapes, Madagascar vanilla, leather, and white musk"
+      ],
+      "designerId": 18,
+      "category": "man",
+      "new": true,
+      "bestseller": false,
+      "img": "https://cdn2.emporium.az/i/p/500/245650-5da47952cf4e4311adc14900e457171d.jpg",
+      "imegs": [
+        "https://cdn2.emporium.az/i/p/500/245650-5da47952cf4e4311adc14900e457171d.jpg"
+      ],
+      "id": "5bbd"
+    },
+    {
+      "brand": "Memo",
+      "name": "Moon Fever Eau de Parfum",
+      "price": 585,
+      "size": "75ML",
+      "notes": [
+        "Top notes: Oil of bitter orange, Oil of vetiver, Leather accord, Oil of grapefruit",
+        "Middle notes: Oil of Primofiore lemon, Neroli blossom absolute",
+        "Base notes: Clary Sage absolute, oil of Verbena, Tonka Bean absolute"
+      ],
+      "designerId": 19,
+      "category": "unisex",
+      "new": false,
+      "bestseller": true,
+      "img": "https://cdn2.emporium.az/i/p/500/276471-79ef15e9eb1ed11aa727b91233ec2991.jpg",
+      "imegs": [
+        "https://cdn2.emporium.az/i/p/500/276471-79ef15e9eb1ed11aa727b91233ec2991.jpg",
+        "https://cdn2.emporium.az/i/p/500/276471-f7786168ee0f1ebb5bcec388d6302ae3.jpg"
+      ],
+      "id": "32eb"
+    },
+    {
+      "brand": "Maison Margiela",
+      "name": "Moon Fever Eau de Parfum",
+      "price": 335,
+      "size": "100ML",
+      "notes": [
+        "Top notes: Pear Accord,Bergamot Essence,Blackcurrant Accord",
+        "Middle notes: Lily Of The Valley Accord,Jasmine Absolute,Rose Damascena Absolute",
+        "Base notes: Rose Damascena Absolute,Vanilla Accord,Ambrox"
+      ],
+      "designerId": 20,
+      "category": "woman",
+      "new": false,
+      "bestseller": false,
+      "img": "https://cdn2.emporium.az/i/p/500/274494-39beadedbf113c907635043d47f57ded.jpg",
+      "imegs": [
+        "https://cdn2.emporium.az/i/p/500/274494-39beadedbf113c907635043d47f57ded.jpg",
+        "https://cdn2.emporium.az/i/p/500/274494-746567726ac230abff3b2aa5137277d8.jpg",
+        "https://cdn2.emporium.az/i/p/500/274494-fc4050b5e90a567ae69519e9989b72bc.jpg",
+        "https://cdn2.emporium.az/i/p/500/274494-311fc664d4910e967b96dbe2b5f15257.jpg"
+      ],
+      "id": "f025"
+    },
+    {
+      "brand": "Nasomatto",
+      "name": "Pardon Eau de Parfum",
+      "price": 340,
+      "size": "30ML",
+      "notes": [
+        "Top notes: magnolia and floral notes",
+        "Middle notes: dark chocolate, tonka bean and cinnamon",
+        "Base notes: oud and sandalwood"
+      ],
+      "designerId": 21,
+      "category": "man",
+      "new": true,
+      "bestseller": false,
+      "img": "https://cdn2.emporium.az/i/p/500/268957-fac4ac491b3934d3b67543411fbf5dfa.jpg",
+      "imegs": [
+        "https://cdn2.emporium.az/i/p/500/268957-fac4ac491b3934d3b67543411fbf5dfa.jpg",
+        "https://cdn2.emporium.az/i/p/500/268957-834e4d1363dd6d0a05d6fd90b02d6fe7.jpg"
+      ],
+      "id": "8b36"
+    },
+    {
+      "brand": "Nishane",
+      "name": "Hacivat X Extrait de Parfum",
+      "price": 675,
+      "size": "100ML",
+      "notes": [
+        "Top notes: Pineapple, Bergamot, Pink pepper",
+        "Middle notes: Lime, Tunisian orange blossom, Jasmine",
+        "Base notes: Vetiver, Patchouli, Cedar"
+      ],
+      "designerId": 22,
+      "category": "unisex",
+      "new": true,
+      "bestseller": true,
+      "img": "https://cdn2.emporium.az/i/p/500/278190-216b24e3941e665bc218924501ccfe37.jpg",
+      "imegs": [
+        "https://cdn2.emporium.az/i/p/500/278190-216b24e3941e665bc218924501ccfe37.jpg",
+        "https://cdn2.emporium.az/i/p/500/278190-5504acc0d9c0dae6290a4962491835ae.jpg"
+      ],
+      "id": "ea48"
+    },
+    {
+      "brand": "Orlov",
+      "name": "Hope Eau de Parfum",
+      "price": 245,
+      "size": "75ML",
+      "notes": [
+        "Top notes: bergamot, pink pepper",
+        "Middle notes: bergamot, pink pepper",
+        "Base notes: bergamot, pink pepper"
+      ],
+      "designerId": 23,
+      "category": "woman",
+      "new": false,
+      "bestseller": true,
+      "img": "https://cdn2.emporium.az/i/p/500/243009-fd32eef068c21b8f0804f9a268a3fe63.jpg",
+      "imegs": [
+        "https://cdn2.emporium.az/i/p/500/243009-fd32eef068c21b8f0804f9a268a3fe63.jpg"
+      ],
+      "id": "3295"
+    },
+    {
+      "brand": "Ojar",
+      "name": "Routes Nomades Eau de Parfum",
+      "price": 455,
+      "size": "100ML",
+      "notes": [
+        "Top notes: Cypress, Ginger, Cardamom",
+        "Middle notes: Ylang-ylang, Vetiver",
+        "Base notes:Cinnamon Leaf, Patchouli, Incense, Leather"
+      ],
+      "designerId": 24,
+      "category": "unisex",
+      "new": true,
+      "bestseller": false,
+      "img": "https://cdn2.emporium.az/i/p/500/276589-982f6ff6f5a1a31a48a66f4d832cacea.jpg",
+      "imegs": [
+        "https://cdn2.emporium.az/i/p/500/276589-982f6ff6f5a1a31a48a66f4d832cacea.jpg",
+        "https://cdn2.emporium.az/i/p/500/276589-41a2b00770c013174bac261fad150d79.jpg"
+      ],
+      "id": "3103"
+    },
+    {
+      "brand": "Orto Parisi",
+      "name": "Bergamask Parfum",
+      "price": 375,
+      "size": "50ML",
+      "notes": [
+        "Top notes: bergamot, lemon",
+        "Middle notes: lavender, lily of the valley, orange blossom",
+        "Base notes: cedar, musk, tonka"
+      ],
+      "designerId": 25,
+      "category": "woman",
+      "new": false,
+      "bestseller": false,
+      "img": "https://cdn2.emporium.az/i/p/500/269002-80270d1de91e88ea0fb89b9507bff0d0.jpg",
+      "imegs": [
+        "https://cdn2.emporium.az/i/p/500/269002-80270d1de91e88ea0fb89b9507bff0d0.jpg",
+        "https://cdn2.emporium.az/i/p/500/269002-6a6f78340ca5466cf21b08d7f8031957.jpg"
+      ],
+      "id": "8d1a"
+    },
+    {
+      "brand": "Prada",
+      "name": "L'Homme Eau De Toilette",
+      "price": 270,
+      "size": "270ML",
+      "notes": [
+        "Top notes: Neroli, Violet",
+        "Middle notes: Geranium, Iris, Pepper",
+        "Base notes: Amber, Cedar Wood, Patchouli"
+      ],
+      "designerId": 26,
+      "category": "man",
+      "new": true,
+      "bestseller": true,
+      "img": "https://cdn2.emporium.az/i/p/500/274525-8b268f0b616b037e991a04892fa26390.jpg",
+      "imegs": [
+        "https://cdn2.emporium.az/i/p/500/274525-8b268f0b616b037e991a04892fa26390.jpg",
+        "https://cdn2.emporium.az/i/p/500/274525-79bf5b7b47ae6e37306343a2464c9e05.jpg"
+      ],
+      "id": "79c2"
+    },
+    {
+      "brand": "Yves Saint Laurent",
+      "name": "Libre Eau de Parfum",
+      "price": 250,
+      "size": "50ML",
+      "notes": [
+        "Top notes: Lavender, Mandarin, Blackcurrant, Petitgrain",
+        "Middle notes: Lavender, Mandarin, Blackcurrant, Petitgrain",
+        "Base notes: Madagascar vanilla, Musk, Cedar, Ambergris"
+      ],
+      "designerId": 27,
+      "category": "woman",
+      "new": false,
+      "bestseller": true,
+      "img": "https://cdn2.emporium.az/i/p/500/280242-0a0d3219bcefe33eb7a1803181130b8c.jpg",
+      "imegs": [
+        "https://cdn2.emporium.az/i/p/500/280242-0a0d3219bcefe33eb7a1803181130b8c.jpg",
+        "https://cdn2.emporium.az/i/p/500/280242-9272ac99e78d92ec888fdfea71ead16a.jpg"
+      ],
+      "id": "dee8"
+    },
+    {
+      "brand": "Tiziana Terenzi",
+      "name": "Tuttle Extrait de Parfum",
+      "price": 755,
+      "size": "100ML",
+      "notes": [
+        "Top notes: Lily of the valley, Tuberose, Magnolia, Tuscan iris",
+        "Middle notes: Guryun Balsam, Amyris, Nagarmotha, Vanilla Flower",
+        "Base notes: Laotian oud, Madagascar vanilla, Ambergris, Musk, Cambodian oud, Indian oud"
+      ],
+      "designerId": 28,
+      "category": "unisex",
+      "new": true,
+      "bestseller": true,
+      "img": "https://cdn2.emporium.az/i/p/500/273849-431a2ab790834ab86cc40e01dfaa135d.jpg",
+      "imegs": [
+        "https://cdn2.emporium.az/i/p/500/273849-431a2ab790834ab86cc40e01dfaa135d.jpg",
+        "https://cdn2.emporium.az/i/p/500/273849-e0861c26450bcdba5c03c0bb6303025c.jpg"
+      ],
+      "id": "60df"
+    },
+    {
+      "brand": "Tom Ford",
+      "name": "Oud Wood Eau De Parfum",
+      "price": 730,
+      "size": "100ML",
+      "notes": [
+        "Top notes: agarwood (oud), Brazilia rosewood",
+        "Middle notes: sandalwood, cardamom, vanilla",
+        "Base notes: sichuan pepper, vetiver, tonka bean, amber"
+      ],
+      "designerId": 29,
+      "category": "man",
+      "new": false,
+      "bestseller": true,
+      "img": "https://cdn2.emporium.az/i/p/500/188502-911cf34d6f71d1ac1b8b2c6b45793f06.jpg",
+      "imegs": [
+        "https://cdn2.emporium.az/i/p/500/188502-911cf34d6f71d1ac1b8b2c6b45793f06.jpg"
+      ],
+      "id": "af93"
+    },
+    {
+      "brand": "Valentino",
+      "name": "Donna Born In Roma Eau De Parfum",
+      "price": 275,
+      "size": "50ML",
+      "notes": [
+        "Top notes: black currant, pink pepper and bergamot",
+        "Middle notes: jasmine, jasmine sambac and jasmine tea",
+        "Base notes: jasmine, jasmine sambac and jasmine tea"
+      ],
+      "designerId": 30,
+      "category": "woman",
+      "new": true,
+      "bestseller": false,
+      "img": "https://cdn2.emporium.az/i/p/500/229235-ebb5eb18b39583214d4e8221c5d760f9.jpg",
+      "imegs": [
+        "https://cdn2.emporium.az/i/p/500/229235-ebb5eb18b39583214d4e8221c5d760f9.jpg",
+        "https://cdn2.emporium.az/i/p/500/229235-2660d4923d1fbfefd87944ec78666af4.jpg",
+        "https://cdn2.emporium.az/i/p/500/229235-b5318186d43bd5229074a4bb0c1c4331.jpg",
+        "https://cdn2.emporium.az/i/p/500/229235-d24c0c1811a826fcd6e57d7c72181390.jpg"
+      ],
+      "id": "570b"
+    },
+    {
+      "brand": "V-Canto",
+      "name": "Arsenico Extrait de Parfum",
+      "price": 575,
+      "size": "100ML",
+      "notes": [
+        "Top notes: pear, lime blossom, pink pepper, petitgrain and laurel",
+        "Middle notes: Jasmine, Coffee, Cocoa, Amber and Clove (spice)",
+        "Base notes: jasmine, jasmine sambac and jasmine tea"
+      ],
+      "designerId": 31,
+      "category": "man",
+      "new": false,
+      "bestseller": true,
+      "img": "https://cdn2.emporium.az/i/p/500/274082-acdfdea09cb63fe2259473a0926c3ea9.jpg",
+      "imegs": [
+        "https://cdn2.emporium.az/i/p/500/229235-ebb5eb18b39583214d4e8221c5d760f9.jpg",
+        "https://cdn2.emporium.az/i/p/500/259138-2f0a2ecfa9e8951b7f024d825d60b535.jpg"
+      ],
+      "id": "0fb7"
+    },
+    {
+      "brand": "Widian by AJ Arabia",
+      "name": "Black II Hair Mist",
+      "price": 185,
+      "size": "50ML",
+      "notes": [
+        "Top notes: Plum and mandarin",
+        "Middle notes: Rose, sandal wood and musk",
+        "Base notes: Vanilla and moss"
+      ],
+      "designerId": 32,
+      "category": "unisex",
+      "new": true,
+      "bestseller": false,
+      "img": "https://cdn2.emporium.az/i/p/500/274082-acdfdea09cb63fe2259473a0926c3ea9.jpg",
+      "imegs": [
+        "https://cdn2.emporium.az/i/p/500/274082-acdfdea09cb63fe2259473a0926c3ea9.jpg",
+        "https://cdn2.emporium.az/i/p/500/274082-2b219552e6be3b974ce7f664a17d8091.jpg",
+        "https://cdn2.emporium.az/i/p/500/274082-813a5a2a07781d76b844c1bb6af5b06c.jpg"
+      ],
+      "id": "2b78"
+    }
+  ]
+}

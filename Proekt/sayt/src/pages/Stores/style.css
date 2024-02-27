@@ -1,0 +1,86 @@
+.stores-main-div {
+  margin-top: 100px;
+}
+.stores-line-div {
+  width: 90%;
+  margin: 0 auto;
+  border-top: 1px solid #eaeae6;
+}
+.stores-content-div {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.stores-info-div {
+  width: 50%;
+}
+.stores-info-h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  font-weight: normal;
+  letter-spacing: 5px;
+}
+.stores-info-p {
+  width: 80%;
+  text-align: justify;
+  line-height: 28px;
+  font-size: 18px;
+}
+.stores-map-main-div {
+  display: flex;
+  width: 90%;
+  margin: 70px auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.stores-map-info-div {
+  width: 25%;
+}
+.stores-map-info-h2 {
+  font-size: 30px;
+  font-weight: normal;
+  letter-spacing: 5px;
+  margin-bottom: 40px;
+}
+.stores-title-p {
+  font-weight: 600;
+  font-size: 20px;
+  margin: 15px 0;
+}
+.stores-title-p span {
+  font-weight: normal;
+  font-size: 18px;
+}
+.stores-map-info-p {
+  font-size: 18px;
+}
+.map-btn {
+  color: white;
+  background-color: black;
+  padding: 10px 40px;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 10px;
+  margin-top: 25px;
+  transition: 0.5s;
+}
+
+.map-btn:hover {
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+}
+.stores-map-div {
+  width: 55%;
+}
+.stores-map-div iframe {
+  width: 100%;
+  height: 80vh;
+  border: none;
+}
+.stores-swiper {
+  width: 90%;
+}

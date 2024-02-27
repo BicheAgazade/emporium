@@ -1,0 +1,53 @@
+.main-first-footer-div,.main-second-footer-div{
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+   
+}
+.inner-firts-footer-div{
+    width: 31%;
+    display: flex;
+    align-items: center;
+    border: 1px solid #EAEAE6;
+    padding: 20px;
+    margin: 1%;
+}
+.inner-firts-footer-div img{
+    width: 10%;
+    margin-right: 4%;
+}
+
+.inner-second-footer-div{
+    width: 20%;
+    margin: 1%;
+}
+
+.inner-second-footer-div p{
+    margin-top: 20px;
+}
+
+.footer-ul li{
+    list-style-type: none;
+    margin-top: 20px;
+ 
+}
+.footer-ul li:hover{
+    cursor: pointer;
+    color: gray;
+}
+
+.payment-img{
+    width: 15%;
+    margin-right: 5%;
+}
+.paymant-card-div{
+    margin-top: 5%;
+   
+}
+
+.social-img{
+      width: 12%;
+      margin-right: 5%;
+      max-width: 100%;
+      height: auto; 
+}

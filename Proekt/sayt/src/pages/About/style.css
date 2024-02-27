@@ -1,0 +1,47 @@
+.about-main-div {
+  width: 90%;
+  margin: 100px auto;
+}
+.about-title-div {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+.about-title-div-h2 {
+  font-size: 40px;
+  font-weight: normal;
+  letter-spacing: 5px;
+  margin-bottom: 20px;
+}
+.about-title-div-p {
+  line-height: 28px;
+  font-size: 18px;
+}
+.about-info-main-div {
+  display: flex;
+  align-items: center;
+  margin: 40px 0;
+  justify-content: space-between;
+}
+
+.about-info-inner-div {
+  width: 30%;
+}
+.about-info-p {
+  text-align: justify;
+  line-height: 28px;
+  font-size: 18px;
+}
+
+.mySwiper-3 {
+  margin-top: 70px;
+ 
+}
+.about-slider {
+  width: 70% !important;
+  display: flex;
+  align-items: center;
+}
+.slider-about-img {
+  width: 100%;
+}

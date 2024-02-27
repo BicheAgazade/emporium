@@ -1,0 +1,21 @@
+.footer-category-info-div {
+  width: 80%;
+  margin: 80px auto;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-category-inner-info-div {
+  width: 60%;
+}
+.footer-category-info-p {
+  text-align: justify;
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 40px;
+}
+.footer-category-info-ul li {
+  list-style-type: none;
+  margin: 15px 0;
+  text-align: justify;
+  font-size: 18px;
+}
