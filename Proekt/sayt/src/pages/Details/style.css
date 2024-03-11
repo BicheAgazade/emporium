@@ -1,0 +1,78 @@
+.details-main-div {
+  width: 90%;
+  margin: 100px auto;
+  display: flex;
+  justify-content: space-between;
+}
+.slider-details {
+  width: 40%;
+}
+
+.details-info-div {
+  width: 55%;
+}
+.details-info-h2 {
+  font-size: 45px;
+  font-weight: normal;
+  letter-spacing: 3px;
+  margin: 30px 0;
+}
+.details-info-p {
+  font-size: 20px;
+  margin: 30px 0;
+}
+.details-btn-div {
+  width: 60%;
+  margin-top: 30px;
+}
+.details-add-to-cart {
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  transition: 0.5s;
+}
+
+.details-add-to-cart:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.details-fav-div {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+  margin: 30px 0;
+}
+.details-heart-div {
+  font-size: 22px;
+  margin-right: 10px;
+}
+
+.details-dscp-div {
+  width: 60%;
+  margin-top: 100px;
+  border-bottom: 1.5px solid lightgray;
+  border-top: 1.5px solid lightgray;
+}
+
+.details-dscp-title-div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+.details-dscp-arr-icon {
+  font-size: 20px;
+}
+.details-li {
+  list-style-type: none;
+  margin: 20px 0;
+  font-size: 18px;
+}

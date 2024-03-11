@@ -13,6 +13,8 @@
 .product-main-brand {
   font-size: 25px;
   margin-bottom: 8px;
+  letter-spacing: 3px;
+  font-weight: normal;
 }
 .product-main-price {
   font-size: 18px;
@@ -29,7 +31,8 @@
 
 .add-to-cart-btn {
   width: 50%;
-  background-color: transparent;
+  background-color: black;
+  color: white;
   border: 1px solid black;
   padding: 5px 15px;
   margin-top: auto;
@@ -42,8 +45,8 @@
 }
 
 .add-to-cart-btn:hover {
-  background-color: black;
-  color: white;
+  background-color: transparent;
+  color: black;
 }
 .product-main-div:hover {
   box-shadow: 0 0 7px 0 #b3b3af;
@@ -56,6 +59,13 @@
 .heart-product-icon:hover {
   cursor: pointer;
 }
-.favorited{
+.favorited {
   color: red;
+  display: flex;
+  align-items: center;
+}
+
+.product-btn-div {
+  display: flex;
+  gap: 15px;
 }

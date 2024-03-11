@@ -12,11 +12,11 @@
 }
 .swiper-button-prev,
 .swiper-button-next {
-  color: black;
+  color: black !important;
 }
 .swiper-button-prev:hover,
 .swiper-button-next:hover {
-  color: #999;
+  color: #999 !important;
 }
 
 .slider-2 {

@@ -186,7 +186,7 @@
       "designerId": 3,
       "category": "woman",
       "new": false,
-      "bestseller": false,
+      "bestseller": true,
       "img": "https://cdn2.emporium.az/i/p/500/272111-0d9b2e7d5e1cb2191eea1b93b1b474da.jpg",
       "imegs": [
         "https://cdn2.emporium.az/i/p/500/272111-0d9b2e7d5e1cb2191eea1b93b1b474da.jpg"
@@ -247,7 +247,7 @@
       "designerId": 6,
       "category": "unisex",
       "new": true,
-      "bestseller": true,
+      "bestseller": false,
       "img": "https://cdn2.emporium.az/i/p/500/279912-daade44f8f228fd649f08f1c941157ec.jpg",
       "imegs": [
         "https://cdn2.emporium.az/i/p/500/279912-daade44f8f228fd649f08f1c941157ec.jpg",
@@ -328,7 +328,7 @@
       ],
       "designerId": 10,
       "category": "woman",
-      "new": false,
+      "new": true,
       "bestseller": false,
       "img": "https://cdn2.emporium.az/i/p/500/273304-04bf4bf1d49bbcaa2fe9175b7b8d9016.jpg",
       "imegs": [
@@ -389,7 +389,7 @@
       ],
       "designerId": 13,
       "category": "unisex",
-      "new": false,
+      "new": true,
       "bestseller": false,
       "img": "https://cdn2.emporium.az/i/p/500/271632-2596d835964699cee60c3170102773ac.jpg",
       "imegs": [
@@ -430,7 +430,7 @@
       ],
       "designerId": 15,
       "category": "woman",
-      "new": true,
+      "new": false,
       "bestseller": true,
       "img": "https://cdn2.emporium.az/i/p/500/239638-b4ee49daa30417189e477f25836c7310.jpg",
       "imegs": [
@@ -471,7 +471,7 @@
       "designerId": 17,
       "category": "man",
       "new": false,
-      "bestseller": false,
+      "bestseller": true,
       "img": "https://cdn2.emporium.az/i/p/500/164865-p1fi4m2jaj1vnedqo193858e3r89.jpg",
       "imegs": [
         "https://cdn2.emporium.az/i/p/500/164865-p1fi4m2jaj1vnedqo193858e3r89.jpg"
@@ -532,7 +532,7 @@
       "designerId": 20,
       "category": "woman",
       "new": false,
-      "bestseller": false,
+      "bestseller": true,
       "img": "https://cdn2.emporium.az/i/p/500/274494-39beadedbf113c907635043d47f57ded.jpg",
       "imegs": [
         "https://cdn2.emporium.az/i/p/500/274494-39beadedbf113c907635043d47f57ded.jpg",
@@ -576,7 +576,7 @@
       "designerId": 22,
       "category": "unisex",
       "new": true,
-      "bestseller": true,
+      "bestseller": false,
       "img": "https://cdn2.emporium.az/i/p/500/278190-216b24e3941e665bc218924501ccfe37.jpg",
       "imegs": [
         "https://cdn2.emporium.az/i/p/500/278190-216b24e3941e665bc218924501ccfe37.jpg",
@@ -637,7 +637,7 @@
       ],
       "designerId": 25,
       "category": "woman",
-      "new": false,
+      "new": true,
       "bestseller": false,
       "img": "https://cdn2.emporium.az/i/p/500/269002-80270d1de91e88ea0fb89b9507bff0d0.jpg",
       "imegs": [
@@ -659,7 +659,7 @@
       "designerId": 26,
       "category": "man",
       "new": true,
-      "bestseller": true,
+      "bestseller": false,
       "img": "https://cdn2.emporium.az/i/p/500/274525-8b268f0b616b037e991a04892fa26390.jpg",
       "imegs": [
         "https://cdn2.emporium.az/i/p/500/274525-8b268f0b616b037e991a04892fa26390.jpg",
@@ -701,7 +701,7 @@
       "designerId": 28,
       "category": "unisex",
       "new": true,
-      "bestseller": true,
+      "bestseller": false,
       "img": "https://cdn2.emporium.az/i/p/500/273849-431a2ab790834ab86cc40e01dfaa135d.jpg",
       "imegs": [
         "https://cdn2.emporium.az/i/p/500/273849-431a2ab790834ab86cc40e01dfaa135d.jpg",
@@ -795,5 +795,8 @@
       ],
       "id": "2b78"
     }
+  ],
+  "contacts": [
+  
   ]
 }

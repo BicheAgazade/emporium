@@ -13,16 +13,10 @@ function FooterHeader({ infoTitle }) {
           <h2>{infoTitle.title}</h2>
           <ul className="footer-header-ul">
             <li
-              className={selectedSection === "gift-cards" ? "selected" : ""}
-              onClick={() => handleCategoryClick("gift-cards")}
+              className={selectedSection === "contacts" ? "selected" : ""}
+              onClick={() => handleCategoryClick("contacts")}
             >
-              GIFT CARDS
-            </li>
-            <li
-              className={selectedSection === "loyalty" ? "selected" : ""}
-              onClick={() => handleCategoryClick("loyalty")}
-            >
-              LOYALTY PROGRAM
+              CONTACT US
             </li>
             <li
               className={selectedSection === "faq" ? "selected" : ""}
@@ -31,10 +25,10 @@ function FooterHeader({ infoTitle }) {
               FAQ
             </li>
             <li
-              className={selectedSection === "contacts" ? "selected" : ""}
-              onClick={() => handleCategoryClick("contacts")}
+              className={selectedSection === "loyalty" ? "selected" : ""}
+              onClick={() => handleCategoryClick("loyalty")}
             >
-              CONTACT US
+              LOYALTY PROGRAM
             </li>
             <li
               className={selectedSection === "delivery" ? "selected" : ""}
@@ -43,16 +37,22 @@ function FooterHeader({ infoTitle }) {
               DELIVERY TERMS
             </li>
             <li
+              className={selectedSection === "paymant" ? "selected" : ""}
+              onClick={() => handleCategoryClick("paymant")}
+            >
+              PAYMENT METHODS
+            </li>
+            <li
               className={selectedSection === "returns" ? "selected" : ""}
               onClick={() => handleCategoryClick("returns")}
             >
               RETURN AND EXCHANGE
             </li>
             <li
-              className={selectedSection === "paymant" ? "selected" : ""}
-              onClick={() => handleCategoryClick("paymant")}
+              className={selectedSection === "gift-cards" ? "selected" : ""}
+              onClick={() => handleCategoryClick("gift-cards")}
             >
-              PAYMENT METHODS
+              GIFT CARDS
             </li>
           </ul>
         </div>

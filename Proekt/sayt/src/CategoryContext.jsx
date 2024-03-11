@@ -13,6 +13,7 @@ const CategoryContext = createContext();
 export const CategoryProvider = ({ children }) => {
   const navigate = useNavigate();
   const [selectedSection, setSelectedSection] = useState("");
+
   const infoTitle = [
     {
       title: "GIFT CARDS",
@@ -51,6 +52,12 @@ export const CategoryProvider = ({ children }) => {
     },
   ];
 
+  const categoryTitle = [
+    { title: "Fragrance", category: "all" },
+    { title: "For Woman", category: "woman" },
+    { title: "For Man", category: "man" },
+    { title: "Unisex", category: "unisex" },
+  ];
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -70,6 +77,7 @@ export const CategoryProvider = ({ children }) => {
     setSelectedSection,
     scrollToTop,
     handleCategoryClick,
+    categoryTitle,
   };
 
   return (

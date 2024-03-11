@@ -1,12 +1,11 @@
 import { useCategory } from "../../CategoryContext";
 import FooterHeader from "../../components/FooterHeader";
 import NeedHelp from "../../components/NeedHelp";
-import "./style.css";
 
 function GiftCard() {
   const { infoTitle } = useCategory();
   const foundTitle = infoTitle.find((item) => item.category === "gift-card");
-   
+
   return (
     <div>
       <FooterHeader infoTitle={foundTitle} />

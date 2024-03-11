@@ -1,17 +1,15 @@
 .fragrance-content {
-  width: 90%;
-  display: flex;
-  justify-content: space-between;
+  width: 80%;
   margin: 150px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 .fragrance-filter {
   width: 20%;
-  background-color: aqua;
   margin: 1%;
 }
-.title-fragrance {
-  width: 75%;
-}
+
 .fragrance-card {
   display: flex;
   flex-wrap: wrap;
@@ -23,4 +21,19 @@
 .fragrance-h2-title a {
   text-decoration: none;
   color: black;
+}
+.h2-filter-div {
+  display: flex;
+  justify-content: space-between;
+  padding: 1%;
+  align-items: center;
+  margin-bottom: 70px;
+}
+.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: black !important;
+ 
+}
+
+.MuiInputLabel-outlined.MuiInputLabel-shrink {
+  color: black !important;
 }

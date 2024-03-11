@@ -4,13 +4,14 @@ import { Link, useNavigate } from "react-router-dom";
 import Basket from "../../components/Basket";
 import { IoIosHeartEmpty } from "react-icons/io";
 import { IoIosSearch } from "react-icons/io";
-import categoryTitle from "../../category.title";
 import FavBadge from "./favlist.counter";
 import { useSelector } from "react-redux";
+import { useCategory } from "../../CategoryContext";
 
 function Header() {
   const navigate = useNavigate();
   const { favList } = useSelector((state) => state);
+  const { categoryTitle } = useCategory();
 
   return (
     <nav className="main-header-div">

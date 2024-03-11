@@ -16,8 +16,10 @@ import Loyalty from "./pages/Loyalty";
 import Faq from "./pages/Faq";
 import ContactUs from "./pages/ContactUs";
 import Returns from "./pages/Return";
+import Details from "./pages/Details";
 
 function App() {
+  
   return (
     <CategoryProvider>
       <div>
@@ -37,6 +39,7 @@ function App() {
           <Route path="/faq" element={<Faq />} />
           <Route path="/contacts" element={<ContactUs />} />
           <Route path="/returns" element={<Returns />} />
+          <Route path="/details/:id" element={<Details />} />
         </Routes>
         <Footer />
       </div>
