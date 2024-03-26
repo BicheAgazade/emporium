@@ -1,0 +1,12 @@
+.alphabet-div {
+  background-color: red;
+}
+
+.ul-alphbaet {
+  display: flex;
+  align-items: center;
+}
+
+.ul-alphbaet li {
+  margin: 5px;
+}

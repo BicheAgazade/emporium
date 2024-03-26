@@ -17,6 +17,7 @@ import Faq from "./pages/Faq";
 import ContactUs from "./pages/ContactUs";
 import Returns from "./pages/Return";
 import Details from "./pages/Details";
+import Search from "./pages/Search";
 
 function App() {
   
@@ -40,6 +41,7 @@ function App() {
           <Route path="/contacts" element={<ContactUs />} />
           <Route path="/returns" element={<Returns />} />
           <Route path="/details/:id" element={<Details />} />
+          <Route path="/search" element={<Search />} />
         </Routes>
         <Footer />
       </div>

@@ -115,7 +115,7 @@ function ContactUs() {
                 <option>Delivery</option>
                 <option>Orders</option>
                 <option>Payment</option>
-                <option>Payment</option>
+                <option>Loyalty</option>
               </select>
             </div>
             <div className="contact-form-div">

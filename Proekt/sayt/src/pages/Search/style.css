@@ -1,0 +1,17 @@
+.search-page-div {
+  width: 90%;
+  margin: 120px auto;
+}
+.search-title-h2 {
+  font-size: 40px;
+  font-weight: normal;
+  letter-spacing: 5px;
+  margin-bottom: 20px;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.search-product-div {
+  display: flex;
+  flex-wrap: wrap;
+}

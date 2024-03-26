@@ -26,7 +26,7 @@ function Fragrance() {
     setSortOption(value);
     setFilterNew(value === "new");
     setFilterBestseller(value === "bestseller");
-    setFilterAll(value==="all")
+    setFilterAll(value === "all");
   };
 
   useEffect(() => {
@@ -36,9 +36,10 @@ function Fragrance() {
           category !== "all" ? "category=" + category : ""
         }`
       )
-      .then(({ data }) => { 
-        setOriginalData(data)
-        setFilteredData(data)})
+      .then(({ data }) => {
+        setOriginalData(data);
+        setFilteredData(data);
+      })
       .catch((err) => console.log("Error fetching products:", err));
   }, [category]);
 

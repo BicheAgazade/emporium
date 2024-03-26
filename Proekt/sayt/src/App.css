@@ -107,3 +107,281 @@
   background-color: transparent;
   color: black;
 }
+
+@media only screen and (min-width: 768px) and (max-width: 1248px) {
+  .main-depart-div {
+    margin: 60px auto;
+  }
+  .inner-depart-div {
+    flex-direction: flex;
+    align-items: center;
+  }
+  .line {
+    width: 30%;
+  }
+  .depart-span {
+    font-size: 24px;
+  }
+  .main-depart-img-div {
+    margin: 10px auto 50px;
+  }
+  .inner-depart-img-div {
+    margin: 10px auto;
+  }
+  .section-p {
+    font-size: 24px;
+  }
+  .new-arrival-h2 {
+    font-size: 28px;
+    margin: 20px auto;
+  }
+  .new-product {
+    margin: 60px 0;
+  }
+
+  .inner-firts-footer-div {
+    width: 33%;
+    margin: 1%;
+  }
+  .inner-second-footer-div {
+    width: 100%;
+    margin: 1%;
+  }
+  .inner-firts-footer-div img {
+    width: 20%;
+    margin-right: 3%;
+  }
+  .payment-img {
+    width: 25%;
+    margin-right: 3%;
+  }
+  .social-img {
+    width: 20%;
+    margin-right: 3%;
+  }
+  .footer-ul li {
+    font-size: 17px;
+  }
+  .search-div {
+    width: 40%;
+  }
+  .header-img-div {
+    width: 20%;
+  }
+  .header-btn {
+    font-size: 18px;
+  }
+  .logo-div {
+    width: 50%;
+  }
+  .header-btn li {
+    font-size: 22px;
+  }
+  .mySwiper-2 {
+    height: 400px;
+    margin-top: 70px;
+  }
+  .chloe-div p,
+  .mancera-div p,
+  .amouage-div p,
+  .ysl-div p {
+    line-height: 18px;
+    margin: 10px 0;
+    font-size: 17px;
+  }
+  .chloe-div h2,
+  .ysl-div h2,
+  .mancera-div h2,
+  .amouage-div h2 {
+    font-size: 18px;
+  }
+  .chloe-btn,
+  .amouage-btn {
+    padding: 5px 20px;
+    font-size: 15px;
+  }
+
+  .mancera-div,
+  .ysl-div,
+  .chloe-div,
+  .amouage-div {
+    top: 40px;
+    text-align: center;
+  }
+
+  .need-help {
+    border-top: 1px solid lightgrey;
+    width: 20%;
+  }
+
+  .need-help-wp-icon {
+    font-size: 30px;
+  }
+  .need-help-p {
+    font-size: 13px;
+    margin: 30px 0;
+  }
+  .need-help-a {
+    font-size: 15px;
+    padding: 5px 15px;
+    margin-top: 30px;
+  }
+  .need-help-a:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .main-depart-div {
+    margin: 60px auto;
+  }
+  .inner-depart-div {
+    flex-direction: flex;
+    align-items: center;
+  }
+  .line {
+    width: 30%;
+  }
+  .depart-span {
+    font-size: 22px;
+  }
+  .main-depart-img-div {
+    margin: 10px auto 50px;
+  }
+  .inner-depart-img-div {
+    width: 100%;
+    margin: 10px auto;
+  }
+  .section-p {
+    font-size: 24px;
+  }
+  .new-arrival-h2 {
+    font-size: 28px;
+    margin: 20px auto;
+  }
+  .new-product {
+    margin: 60px 0;
+  }
+  .main-first-footer-div {
+    flex-wrap: wrap;
+  }
+  .inner-firts-footer-div {
+    width: 100%;
+    margin: 1%;
+  }
+  .inner-firts-footer-div img {
+    width: 10%;
+    margin-right: 3%;
+  }
+  .inner-second-footer-div {
+    width: 30%;
+    margin: 1%;
+  }
+  .payment-img {
+    width: 30%;
+    margin-right: 3%;
+  }
+  .social-img {
+    width: 22%;
+    margin-right: 3%;
+  }
+  .main-second-footer-div {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .search-div {
+    width: 60%;
+  }
+  .header-img-div {
+    width: 15%;
+  }
+  .logo-div {
+    width: 70%;
+  }
+  .nav-icon-div {
+    display: flex;
+  }
+  .nav-icon-div p {
+    display: none;
+  }
+  .header-btn {
+    display: none;
+  }
+  .burger-menu {
+    display: block;
+    cursor: pointer;
+  }
+  .menu {
+    display: block;
+  }
+
+  .mySwiper-2 {
+    height: 400px;
+    margin-top: 70px;
+  }
+  .chloe-div p,
+  .mancera-div p,
+  .amouage-div p,
+  .ysl-div p {
+    line-height: 18px;
+    margin: 10px 0;
+    font-size: 15px;
+  }
+  .chloe-div h2,
+  .ysl-div h2,
+  .mancera-div h2,
+  .amouage-div h2 {
+    font-size: 13px;
+  }
+  .chloe-btn,
+  .amouage-btn {
+    padding: 5px 20px;
+    font-size: 12px;
+  }
+
+  .mancera-div,
+  .ysl-div,
+  .chloe-div,
+  .amouage-div {
+    top: 40px;
+    text-align: center;
+  }
+  .footer-category-info-div {
+    display: block;
+  }
+  .footer-category-inner-info-div {
+    width: 100%;
+  }
+  .footer-contact-info-div {
+    display: block;
+  }
+  .footer-contact-table-div {
+    width: 100%;
+  }
+  .footer-contact-table-div td {
+    font-size: 15px;
+    padding: 5px;
+  }
+  .contact-hr {
+    margin-top: 25px;
+  }
+
+  .contact-icon-div {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .contact-icon-p {
+    font-size: 17px;
+  }
+  .contact-icon-img {
+    font-size: 30px;
+    margin-right: 5px;
+  }
+  .contact-form {
+    width: 100%;
+  }
+}

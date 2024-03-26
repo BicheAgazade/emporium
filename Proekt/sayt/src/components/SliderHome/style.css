@@ -58,6 +58,7 @@
   background-color: rgb(227, 207, 207);
   color: black;
   border: 1px solid rgb(227, 207, 207);
+  cursor: pointer;
 }
 
 .mancera-div,
@@ -89,6 +90,7 @@
   color: white;
 }
 .amouage-btn:hover {
+  cursor: pointer;
   background-color: black;
   border: 1px solid black;
 }

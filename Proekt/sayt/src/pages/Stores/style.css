@@ -84,3 +84,68 @@
 .stores-swiper {
   width: 90%;
 }
+
+@media only screen and (min-width: 768px) and (max-width: 1248px) {
+  .stores-content-div {
+    width: 90%;
+    display: block;
+    margin: 30px auto;
+  }
+  .stores-content-div img {
+    width: 100%;
+  }
+  .stores-info-div {
+    text-align: center;
+    width: 80%;
+    margin: 30px auto;
+  }
+  .stores-info-h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-weight: normal;
+    letter-spacing: 5px;
+  }
+  .stores-info-p {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .stores-content-div {
+    width: 90%;
+    display: block;
+    margin: 30px auto;
+  }
+  .stores-content-div img {
+    width: 100%;
+  }
+  .stores-info-div {
+    text-align: center;
+    width: 80%;
+    margin: 30px auto;
+  }
+  .stores-info-h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: normal;
+    letter-spacing: 5px;
+  }
+  .stores-info-p {
+    text-align: center;
+    width: 100%;
+  }
+
+  .stores-map-main-div {
+    display: block;
+    margin: 100px auto;
+  }
+
+  .stores-map-info-div {
+    width: 100%;
+  }
+  .stores-map-div {
+    width: 100%;
+    margin-top: 40px;
+  }
+}

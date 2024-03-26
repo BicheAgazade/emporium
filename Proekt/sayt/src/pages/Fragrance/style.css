@@ -31,9 +31,20 @@
 }
 .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
   border-color: black !important;
- 
 }
 
 .MuiInputLabel-outlined.MuiInputLabel-shrink {
   color: black !important;
+}
+
+@media only screen and (max-width: 767px) {
+  .fragrance-content {
+    margin: 100px auto;
+  }
+  .fragrance-filter {
+    width: 30%;
+  }
+  .fragrance-h2-title {
+    font-size: 20px;
+  }
 }

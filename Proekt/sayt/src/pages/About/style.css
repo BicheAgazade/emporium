@@ -35,7 +35,6 @@
 
 .mySwiper-3 {
   margin-top: 70px;
- 
 }
 .about-slider {
   width: 70% !important;
@@ -45,3 +44,44 @@
 .slider-about-img {
   width: 100%;
 }
+
+@media only screen and (min-width: 768px) and (max-width: 1248px) {
+.about-title-div {
+    width: 60%;
+}
+  .about-info-main-div {
+  display: block;
+  margin: 100px auto;
+ }
+  .about-info-main-div img{
+    width: 100%;
+  }
+  .about-info-inner-div{
+    width: 60%;
+    margin: 50px auto;
+ }
+.about-info-p {
+ text-align: center;
+}
+}
+
+@media only screen and (max-width: 767px) {
+  .about-title-div {
+    width: 80%;
+}
+  .about-info-main-div {
+  display: block;
+  margin: 100px auto;
+ }
+  .about-info-main-div img{
+    width: 100%;
+  }
+  .about-info-inner-div{
+    width: 80%;
+    margin: 50px auto;
+ }
+.about-info-p {
+ text-align: center;
+}
+
+  }

@@ -30,6 +30,9 @@
   color: black;
   font-size: 22px;
 }
+.search-icon:hover {
+  cursor: pointer;
+}
 
 .header-img-div {
   display: flex;
@@ -105,4 +108,50 @@
   border-radius: 50%;
   top: -7px;
   right: 20px;
+}
+
+.burger-menu {
+  display: none;
+  cursor: pointer;
+}
+.icon-menu {
+  font-size: 33px;
+  margin: 8px 15px 0px 15px;
+}
+
+.menu {
+  display: none;
+  position: fixed;
+  top: 60px;
+  right: 0px;
+  height: 100%;
+  width: 250px;
+  background-color: white;
+  animation: slideIn 1s ease-in-out forwards;
+  overflow: hidden;
+  z-index: 9999;
+}
+.menu-li {
+  color: black;
+  list-style-type: none;
+  font-size: 20px;
+  text-align: center;
+  border: 1px solid lightgrey;
+  margin: 5%;
+  padding: 7px 20px;
+  border-radius: 8px;
+  transition: 0.5s;
+}
+.menu-li:hover {
+  cursor: pointer;
+  background-color: lightgrey;
+}
+
+@keyframes slideIn {
+  from {
+    right: -300px;
+  }
+  to {
+    right: 0;
+  }
 }

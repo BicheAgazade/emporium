@@ -133,3 +133,44 @@ body {
   border-bottom: 2px solid gray;
   cursor: pointer;
 }
+
+@media only screen and (min-width: 768px) and (max-width: 1248px) {
+  .modal-info-p {
+    font-size: 20px;
+  }
+  .modal-btn-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .modal-add-to-cart {
+    width: 85%;
+  }
+  .modal-fav-icon {
+    width: 13%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .quick-view-modal {
+    width: 90%;
+  }
+  .modal-info-p {
+    font-size: 15px;
+  }
+  .modal-info-h2 {
+    font-size: 30px;
+  }
+  .modal-btn-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .modal-add-to-cart {
+    width: 80%;
+  }
+
+  .modal-fav-icon {
+    width: 18%;
+  }
+}

@@ -1,4 +1,4 @@
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
 import delivery from "./imegs/delivery-large.jpg";
 import payments from "./imegs/payment-large.jpg";
 import giftcard from "./imegs/gift-coupon-large.jpg";
@@ -7,12 +7,34 @@ import faq from "./imegs/faq-large.jpg";
 import loyalty from "./imegs/loyalty-large.jpg";
 import contact from "./imegs/contact-large.jpg";
 import { useNavigate } from "react-router";
+import axios from "axios";
 
 const CategoryContext = createContext();
 
 export const CategoryProvider = ({ children }) => {
   const navigate = useNavigate();
   const [selectedSection, setSelectedSection] = useState("");
+  const [product, setProduct] = useState([]);
+  const [searchValue, setSearchValue] = useState("");
+  const [searchResults, setSearchResults] = useState([]);
+
+  function handelSearch() {
+    navigate("/search");
+    const results = product.filter((product) =>
+      product.brand.toLowerCase().includes(searchValue.toLowerCase())
+    );
+    setSearchResults(results);
+    setSearchValue("");
+  }
+
+  useEffect(() => {
+    axios
+      .get(`http://localhost:3000/product`)
+      .then(({ data }) => {
+        setProduct(data);
+      })
+      .catch((err) => console.log("Error fetching products:", err));
+  }, []);
 
   const infoTitle = [
     {
@@ -78,6 +100,13 @@ export const CategoryProvider = ({ children }) => {
     scrollToTop,
     handleCategoryClick,
     categoryTitle,
+    setProduct,
+    product,
+    searchValue,
+    setSearchValue,
+    searchResults,
+    setSearchResults,
+    handelSearch,
   };
 
   return (
