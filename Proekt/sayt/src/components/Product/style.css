@@ -42,14 +42,17 @@
 }
 .product-main-div:hover .add-to-cart-btn {
   opacity: 1;
+  cursor: pointer;
 }
 
 .add-to-cart-btn:hover {
   background-color: transparent;
   color: black;
+  cursor: pointer;
 }
 .product-main-div:hover {
   box-shadow: 0 0 7px 0 #b3b3af;
+  cursor: pointer;
 }
 
 .heart-product-icon {
@@ -99,4 +102,10 @@
   .heart-product-icon {
     font-size: 22px;
   }
+}
+
+.custom-toast {
+  background-color: red;
+  color: red;
+  font-size: 16px;
 }

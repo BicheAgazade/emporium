@@ -5,14 +5,14 @@ import { removeFromCart } from "../../Redux/Actions/cart.actions";
 import { useDispatch } from "react-redux";
 import { IoBagOutline } from "react-icons/io5";
 import BasketBadge from "./basket.counter";
+import { IoBagHandleOutline } from "react-icons/io5";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function Basket() {
   const [isBasketOpen, setIsBasketOpen] = useState(false);
-
   const { cartList } = useSelector((state) => state);
-
   const dispatch = useDispatch();
-
   const toggleBasket = () => {
     setIsBasketOpen(!isBasketOpen);
   };
@@ -53,7 +53,10 @@ function Basket() {
                     <p className="basket-main-size">QTY: {item.quantity}</p>
                     <p className="basket-main-price">{item.price} AZN</p>
                     <button
-                      onClick={() => dispatch(removeFromCart(item.id))}
+                      onClick={ () => {
+                        dispatch(removeFromCart(item.id))
+                        toast.error("Product removed from cart!")}
+                      }
                       className="delet-basket-item"
                     >
                       Delete
@@ -63,25 +66,33 @@ function Basket() {
               ))}
             </div>
           ) : null}
-          <div className="basket-footer">
-            <p className="basket-price-footer">
-              TOTAL PRICE <span> {calculateTotal()} AZN</span>
-            </p>
-            <p className="basket-price-footer">
-              Delivery{" "}
-              <span>
-                {calculateTotal() > 200
-                  ? "FREE"
-                  : calculateTotal() === 0
-                  ? " "
-                  : "10 AZN"}
-              </span>
-            </p>
-            <button className="go-to-cart-btn">GO TO CART</button>
-            <button onClick={toggleBasket} className="continue-btn">
-              CONTINUE SHOPPING
-            </button>
-          </div>
+
+          {cartList.length ? (
+            <div className="basket-footer">
+              <p className="basket-price-footer">
+                TOTAL PRICE <span> {calculateTotal()} AZN</span>
+              </p>
+              <p className="basket-price-footer">
+                Delivery
+                <span>
+                  {calculateTotal() > 200
+                    ? "FREE"
+                    : calculateTotal() === 0
+                    ? " "
+                    : "10 AZN"}
+                </span>
+              </p>
+              <button className="go-to-cart-btn">GO TO CART</button>
+              <button onClick={toggleBasket} className="continue-btn">
+                CONTINUE SHOPPING
+              </button>
+            </div>
+          ) : (
+            <div className="empty-basket">
+              <IoBagHandleOutline className="empty-icon-bag" />
+              <p>Your cart is empty</p>
+            </div>
+          )}
         </div>
       )}
     </div>

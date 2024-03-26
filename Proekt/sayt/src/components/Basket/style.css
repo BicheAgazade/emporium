@@ -127,3 +127,17 @@
   color: gray;
   border-bottom: 1px solid gray;
 }
+
+.empty-basket {
+  width: 100%;
+  color: black;
+  text-align: center;
+  margin: 50px auto;
+}
+.empty-icon-bag {
+  font-size: 80px;
+}
+.empty-basket p {
+  font-size: 30px;
+  margin-top: 20px;
+}

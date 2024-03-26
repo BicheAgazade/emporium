@@ -15,3 +15,13 @@
   display: flex;
   flex-wrap: wrap;
 }
+.sadness-div {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  margin: 20px auto;
+  justify-content: center;
+}
+.sadness-img {
+  width: 30%;
+}

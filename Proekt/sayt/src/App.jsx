@@ -18,13 +18,15 @@ import ContactUs from "./pages/ContactUs";
 import Returns from "./pages/Return";
 import Details from "./pages/Details";
 import Search from "./pages/Search";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
-  
   return (
     <CategoryProvider>
       <div>
         <Header />
+
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -43,6 +45,7 @@ function App() {
           <Route path="/details/:id" element={<Details />} />
           <Route path="/search" element={<Search />} />
         </Routes>
+        <ToastContainer />
         <Footer />
       </div>
     </CategoryProvider>
