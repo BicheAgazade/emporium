@@ -87,6 +87,7 @@ export const CategoryProvider = ({ children }) => {
     });
   };
 
+  
   const handleCategoryClick = (category) => {
     navigate(`/${category}`);
     scrollToTop();
@@ -107,6 +108,7 @@ export const CategoryProvider = ({ children }) => {
     searchResults,
     setSearchResults,
     handelSearch,
+  
   };
 
   return (

@@ -135,7 +135,8 @@
   margin: 50px auto;
 }
 .empty-icon-bag {
-  font-size: 80px;
+  font-size: 100px;
+  margin-top: 50px;
 }
 .empty-basket p {
   font-size: 30px;

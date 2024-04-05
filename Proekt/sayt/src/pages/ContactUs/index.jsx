@@ -135,7 +135,7 @@ function ContactUs() {
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
-                  type="text"
+                  type="email"
                   placeholder="Email"
                 />
               </div>

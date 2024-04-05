@@ -8,10 +8,12 @@ import BasketBadge from "./basket.counter";
 import { IoBagHandleOutline } from "react-icons/io5";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { useNavigate } from "react-router";
 
 function Basket() {
   const [isBasketOpen, setIsBasketOpen] = useState(false);
   const { cartList } = useSelector((state) => state);
+  const navigate = useNavigate()
   const dispatch = useDispatch();
   const toggleBasket = () => {
     setIsBasketOpen(!isBasketOpen);
@@ -23,6 +25,7 @@ function Basket() {
       0
     );
   };
+
 
   return (
     <div className="basket-div-main">
@@ -75,14 +78,13 @@ function Basket() {
               <p className="basket-price-footer">
                 Delivery
                 <span>
-                  {calculateTotal() > 200
-                    ? "FREE"
-                    : calculateTotal() === 0
-                    ? " "
-                    : "10 AZN"}
+                  {calculateTotal() > 200? "FREE":"10 AZN"}
                 </span>
               </p>
-              <button className="go-to-cart-btn">GO TO CART</button>
+              <button onClick={()=> {
+                navigate("/basketcart")
+                setIsBasketOpen(false)
+            }} className="go-to-cart-btn">GO TO CART</button>
               <button onClick={toggleBasket} className="continue-btn">
                 CONTINUE SHOPPING
               </button>

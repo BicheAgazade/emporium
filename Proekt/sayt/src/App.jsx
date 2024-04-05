@@ -4,7 +4,6 @@ import Header from "./layout/Header";
 import About from "./pages/About";
 import Home from "./pages/Home";
 import "./App.css";
-import Designers from "./pages/Designers";
 import Fragrance from "./pages/Fragrance";
 import FavList from "./pages/FavList";
 import { CategoryProvider } from "./CategoryContext";
@@ -20,17 +19,17 @@ import Details from "./pages/Details";
 import Search from "./pages/Search";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import BasketCart from "./pages/BasketCart";
+import Checkout from "./pages/Checkout";
 
 function App() {
   return (
     <CategoryProvider>
       <div>
         <Header />
-
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/designers" element={<Designers />} />
           <Route path="/fragrance/:category" element={<Fragrance />} />
           <Route path="/favlist" element={<FavList />} />
           <Route path="/about" element={<About />} />
@@ -44,6 +43,8 @@ function App() {
           <Route path="/returns" element={<Returns />} />
           <Route path="/details/:id" element={<Details />} />
           <Route path="/search" element={<Search />} />
+          <Route path="/basketcart" element={<BasketCart />} />
+          <Route path="/checkout" element={<Checkout />} />
         </Routes>
         <ToastContainer />
         <Footer />
