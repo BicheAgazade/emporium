@@ -14,6 +14,8 @@ import { IoIosArrowUp } from "react-icons/io";
 import { useDispatch } from "react-redux";
 import { addToCartAction } from "../../Redux/Actions/cart.actions";
 import { addToFavAction, removeFromFav } from "../../Redux/Actions/fav.actions";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function Details() {
   const [obj, setObj] = useState({});
@@ -38,6 +40,7 @@ function Details() {
   const handelAddToFav = () => {
     dispatch(addToFavAction(obj));
     setChangeHeart(true);
+      toast.success("Product successfully added to favlist!");
   };
 
   return (
@@ -78,7 +81,8 @@ function Details() {
         <p className="details-info-p">SIZE: {obj.size}</p>
         <div className="details-btn-div">
           <button
-            onClick={() => dispatch(addToCartAction(obj))}
+            onClick={() => {dispatch(addToCartAction(obj))
+              toast.success("Product successfully added to cart!");}}
             className="details-add-to-cart"
           >
             ADD TO CART
@@ -89,7 +93,8 @@ function Details() {
               <FaHeart
                 onClick={() => {
                   setChangeHeart(false);
-                  dispatch(removeFromFav(obj));
+                  dispatch(removeFromFav(obj))
+                  toast.error("Product removed from favlist!");
                 }}
                 className="details-heart-div favorited"
               />

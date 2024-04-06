@@ -13,6 +13,8 @@ import { useDispatch } from "react-redux";
 import { addToCartAction } from "../../Redux/Actions/cart.actions";
 import { removeFromFav } from "../../Redux/Actions/fav.actions";
 import { useCategory } from "../../CategoryContext";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function QuickView({ item, onClose, fav, isFavorited }) {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
@@ -68,7 +70,8 @@ function QuickView({ item, onClose, fav, isFavorited }) {
           <p className="modal-info-p">SIZE: {item.size}</p>
           <div className="modal-btn-div">
             <button
-              onClick={() => dispatch(addToCartAction(item))}
+              onClick={() => {dispatch(addToCartAction(item))
+              toast.success("Product successfully added to cart!");}}
               className="modal-add-to-cart"
             >
               ADD TO CART
@@ -76,7 +79,8 @@ function QuickView({ item, onClose, fav, isFavorited }) {
             <div className="modal-fav-icon">
               {isFavorited ? (
                 <FaHeart
-                  onClick={() => dispatch(removeFromFav(item))}
+                  onClick={() =>{ dispatch(removeFromFav(item))
+                 toast.error("Product removed from favlist!")}}
                   className="modal-heart-icon favorited"
                 />
               ) : (

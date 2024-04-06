@@ -3,14 +3,19 @@ import "./style.css";
 import { useNavigate } from "react-router";
 import { useState } from "react";
 import PickupDelivery from "../../components/PickupDelivery";
+import CompleteOrder from "../../components/CompleteOrder";
+import { useCategory } from "../../CategoryContext";
 
 function Checkout() {
   const { cartList } = useSelector((state) => state);
   const navigate = useNavigate();
+   const { scrollToTop } = useCategory();
   const [checkboxOpen, setCheckboxOpen] = useState(false);
   const [deliveryMethod, setDeliveryMethod] = useState("standard");
   const [city, setCity] = useState("Other");
   const [pickupSelected, setPickupSelected] = useState(true);
+ const [completeOrder, setcompleteOrder] = useState(false);
+
 
   const calculateTotal = () => {
     let total = cartList.reduce(
@@ -42,8 +47,7 @@ function Checkout() {
       return city === "Baku" ? "15 AZN" : "25 AZN";
     }
   };
-
-  const SubTotalDelivery = () => {
+ const SubTotalDelivery = () => {
     if (deliveryMethod == "standard") {
       if (calculateTotal() < 200) {
         return calculateTotal() + 10;
@@ -54,6 +58,7 @@ function Checkout() {
       return calculateTotal() + calcUrgentDelivery();
     }
   };
+
   return (
     <div className="checkout-main-div">
       <div className="checkout-delivery-main-div">
@@ -61,13 +66,13 @@ function Checkout() {
           <h3>Select delivery methods </h3>
           <div className="checkout-delivery-btn-div">
             <button
-              className={`delivery-btn ${pickupSelected ? "selected" : ""}`}
+              className={`delivery-btn ${pickupSelected ? "selected2" : ""}`}
               onClick={() => setPickupSelected(true)}
             >
               Delivery
             </button>
             <button
-              className={`pickup-btn ${pickupSelected ? "" : "selected"}`}
+              className={`pickup-btn ${pickupSelected ? "" : "selected2"}`}
               onClick={() => setPickupSelected(false)}
             >
               Pickup from the store
@@ -112,7 +117,7 @@ function Checkout() {
             </div>
             <div className="checkout-form-div">
               <h3>Delivery details</h3>
-              
+
               <form className="checkout-form" action="">
                 <div className="checkout-form-name-div">
                   <div className="checkout-form-flex-div">
@@ -190,15 +195,19 @@ function Checkout() {
             </div>
           </>
         ) : (
-         <PickupDelivery/>
+          <PickupDelivery />
         )}
-
+      {completeOrder?<CompleteOrder/>:""}
         <input
+          onClick={()=>setcompleteOrder(true)}
           className="checkout-submit-input"
           value="Complete Order"
           type="submit"
         />
-        <button className="back-to-shop-btn">BACK TO SHOPPING CART</button>
+        <button onClick={()=> {
+          navigate("/basketcart")
+          scrollToTop()}} 
+          className="back-to-shop-btn">BACK TO SHOPPING CART</button>
       </div>
 
       <div className="checkout-product-main-div">
@@ -233,14 +242,25 @@ function Checkout() {
               <span>ITEMS TOTAL </span>
               <span>{calculateTotal()} AZN</span>
             </div>
-            <div className="checkout-order-div">
-              <span>DELIVERY</span>
-              <span> {TotalDelivery()}</span>
-            </div>
-            <div className="checkout-order-div subtotal">
-              <span>SUBTOTAL </span>
-              <span> {SubTotalDelivery()} AZN</span>
-            </div>
+            {pickupSelected ? (
+              <div className="checkout-order-div">
+                <span>DELIVERY</span>
+                <span> {TotalDelivery()}</span>
+              </div>
+            ) : (
+              ""
+            )}
+            {pickupSelected ? (
+              <div className="checkout-order-div subtotal">
+                <span>SUBTOTAL </span>
+                <span> {SubTotalDelivery()} AZN</span>
+              </div>
+            ) : (
+              <div className="checkout-order-div subtotal">
+                <span>SUBTOTAL </span>
+                <span> {calculateTotal()} AZN</span>
+              </div>
+            )}
           </div>
         </div>
       </div>

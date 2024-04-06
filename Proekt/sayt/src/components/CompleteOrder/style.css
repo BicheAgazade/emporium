@@ -1,0 +1,43 @@
+body{
+    position: relative;
+}
+
+.complate-order-div{
+ position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.514);
+  z-index: 999;
+}
+.complate-inner-order-div{
+ position: fixed;
+  width: 55%;
+  z-index: 1000;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 10px;
+  text-align: center;
+}
+  
+.complate-order-div span{
+    position: absolute;
+    color: black;
+    top: 5px;
+    right: 15px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.complate-order-div span:hover{
+    color: gray;
+    cursor: pointer;
+}
+.complate-order-div img{
+    width: 50%;
+}
+.complate-order-div p{
+    margin: 15px 0;
+}

@@ -10,11 +10,13 @@ import { useSelector } from "react-redux";
 import { useState } from "react";
 import { HiOutlineMenu } from "react-icons/hi";
 import { IoCloseSharp } from "react-icons/io5";
-
+import { MdOutlineKeyboardArrowDown } from "react-icons/md";
+import { MdKeyboardArrowUp } from "react-icons/md";
 function Header() {
   const navigate = useNavigate();
   const { favList } = useSelector((state) => state);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [arrow, setArrow] = useState(true);
 
   const { categoryTitle, searchValue, setSearchValue, handelSearch } =
     useCategory();
@@ -22,6 +24,10 @@ function Header() {
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
+
+  const arrowOpenFunc=()=>{
+    setArrow(!arrow)
+  }
 
   return (
     <nav className="main-header-div">
@@ -66,7 +72,7 @@ function Header() {
                     {item.title}
                   </li>
                 ))}
-              <li className="menu-li" onClick={() => navigate("/about")}>
+                <li className="menu-li" onClick={() => navigate("/about")}>
                   About
                 </li>
                 <li className="menu-li" onClick={() => navigate("/stores")}>
@@ -98,6 +104,10 @@ function Header() {
               {item.title}
             </li>
           ))}
+          <li onMouseOut={arrowOpenFunc} onMouseEnter={arrowOpenFunc} className="support-li">
+            Support {arrow?<MdOutlineKeyboardArrowDown />:<MdKeyboardArrowUp/>}
+          </li>
+          <li>Contact Us</li>
         </div>
       </div>
     </nav>

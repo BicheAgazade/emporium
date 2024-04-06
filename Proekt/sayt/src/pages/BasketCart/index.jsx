@@ -5,11 +5,13 @@ import { removeFromCart } from "../../Redux/Actions/cart.actions";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { IoBagHandleOutline } from "react-icons/io5";
+import { useCategory } from "../../CategoryContext";
 
 function BasketCart() {
   const { cartList } = useSelector((state) => state);
   const navigate = useNavigate();
   const dispatch = useDispatch();
+     const { scrollToTop } = useCategory();
   const calculateTotal = () => {
     return cartList.reduce(
       (total, item) => total + item.price * item.quantity,
@@ -77,7 +79,9 @@ function BasketCart() {
                 </span>
               </div>
               <button
-                onClick={() => navigate("/checkout")}
+                onClick={() => {navigate("/checkout")
+                scrollToTop()
+              }}
                 className="shop-bag-checkout-btn"
               >
                 Continue to Checkout

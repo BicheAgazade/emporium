@@ -9,12 +9,14 @@ import { IoBagHandleOutline } from "react-icons/io5";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useNavigate } from "react-router";
+import { useCategory } from "../../CategoryContext";
 
 function Basket() {
   const [isBasketOpen, setIsBasketOpen] = useState(false);
   const { cartList } = useSelector((state) => state);
   const navigate = useNavigate()
   const dispatch = useDispatch();
+   const { scrollToTop } = useCategory();
   const toggleBasket = () => {
     setIsBasketOpen(!isBasketOpen);
   };
@@ -26,7 +28,11 @@ function Basket() {
     );
   };
 
-
+const goToCartFunc=()=>{
+   navigate("/basketcart");
+   setIsBasketOpen(false);
+   scrollToTop()
+}
   return (
     <div className="basket-div-main">
       <div className="nav-icon-div">
@@ -56,10 +62,10 @@ function Basket() {
                     <p className="basket-main-size">QTY: {item.quantity}</p>
                     <p className="basket-main-price">{item.price} AZN</p>
                     <button
-                      onClick={ () => {
-                        dispatch(removeFromCart(item.id))
-                        toast.error("Product removed from cart!")}
-                      }
+                      onClick={() => {
+                        dispatch(removeFromCart(item.id));
+                        toast.error("Product removed from cart!");
+                      }}
                       className="delet-basket-item"
                     >
                       Delete
@@ -77,14 +83,11 @@ function Basket() {
               </p>
               <p className="basket-price-footer">
                 Delivery
-                <span>
-                  {calculateTotal() > 200? "FREE":"10 AZN"}
-                </span>
+                <span>{calculateTotal() > 200 ? "FREE" : "10 AZN"}</span>
               </p>
-              <button onClick={()=> {
-                navigate("/basketcart")
-                setIsBasketOpen(false)
-            }} className="go-to-cart-btn">GO TO CART</button>
+              <button onClick={goToCartFunc} className="go-to-cart-btn">
+                GO TO CART
+              </button>
               <button onClick={toggleBasket} className="continue-btn">
                 CONTINUE SHOPPING
               </button>
