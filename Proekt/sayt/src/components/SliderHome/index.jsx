@@ -1,99 +1,73 @@
 import "./style.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import { Navigation, Autoplay } from "swiper";
-import choleHome from "../../imegs/home_chloe.jpg";
+import { EffectCube, Pagination, Autoplay } from "swiper";
+import choleHome from "../../imegs/initio-home.jpg";
 import manceraHome from "../../imegs/home_mancera.jpg";
 import amouageHome from "../../imegs/home_amouage.jpg";
-import yslHome from "../../imegs/home_ysl.jpg";
+import yslHome from "../../imegs/mon-paris.jpg";
 import { useNavigate } from "react-router-dom";
+import "swiper/css";
+import "swiper/css/effect-cube";
+import "swiper/css/pagination";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
 
 function HomeSlider() {
   const navigate = useNavigate();
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
 
   return (
-    <Swiper
-      navigation={true}
-      loop={true}
-      autoplay={{ delay: 2000 }}
-      modules={[Navigation, Autoplay]}
-      className="mySwiper-2"
-    >
-      <SwiperSlide className="slider-2">
-        <img src={choleHome} alt="" />
-        <div className="chloe-div">
-          <h2>CHLOE FRAGRANCES</h2>
-          <p>
-            Explore a range of captivating and irresistibly intense fragrances.
-            From Eau de Parfum to Eau de Toilette, Chloe luxury floral perfumes
-            feature round, velvety, and fragrant facets that encapsulate the
-            Chloé woman free spirit and timeless elegance.
-          </p>
+    <div className="swiper-div-home">
+      <Swiper
+        autoplay={{ delay: 1500 }}
+        loop={true}
+        effect={"cube"}
+        grabCursor={true}
+        cubeEffect={{
+          shadow: true,
+          slideShadows: true,
+          shadowOffset: 20,
+          shadowScale: 0.94,
+        }}
+        pagination={true}
+        modules={[EffectCube, Pagination, Autoplay]}
+        className="mySwiper-2"
+      >
+        <SwiperSlide className="swiper-slider-home">
+          <img src={yslHome} alt="" />
+        </SwiperSlide>
+        <SwiperSlide className="swiper-slider-home">
+          <img src={manceraHome} alt="" />
+        </SwiperSlide>
+        <SwiperSlide className="swiper-slider-home">
+          <img src={amouageHome} alt="" />
+        </SwiperSlide>
 
-          <button
-            onClick={() => navigate("/fragrance/all")}
-            className="chloe-btn"
-          >
-            view the collection
-          </button>
-        </div>
-      </SwiperSlide>
-      <SwiperSlide className="slider-2 ">
-        <img src={manceraHome} alt="" />
-        <div className="mancera-div">
-          <h2>MANCERA FRAGRANCES</h2>
-          <p>
-            Mancera olfactory signature has been composed to please occidental
-            and oriental intense perfumes lovers. Indeed, the creators wanted to
-            father a very occidental brand with the intensity and the best
-            ingredients of the Arab perfumes.
-          </p>
+        <SwiperSlide className="swiper-slider-home">
+          <img src={choleHome} alt="" />
+        </SwiperSlide>
+      </Swiper>
 
-          <button
-            onClick={() => navigate("/fragrance/all")}
-            className="chloe-btn"
-          >
-            view the collection
-          </button>
-        </div>
-      </SwiperSlide>
-      <SwiperSlide className="slider-2 ">
-        <img src={amouageHome} alt="" />
-        <div className="amouage-div">
-          <h2>AMOUAGE FRAGRANCES</h2>
-          <p>
-            Amouage uses the traditional materials of Middle Eastern perfumery,
-            such as frankincense and myrrh, but the perfumes are developed by
-            perfumers from the major Fragrance & Flavor companies and are geared
-            towards an international clientele.
-          </p>
-
-          <button
-            onClick={() => navigate("/fragrance/all")}
-            className="amouage-btn"
-          >
-            view the collection
-          </button>
-        </div>
-      </SwiperSlide>
-      <SwiperSlide className="slider-2">
-        <img src={yslHome} alt="" />
-        <div className="ysl-div">
-          <h2>YVES SAINT LAURENT FRAGRANCES</h2>
-          <p>
-            You dont have to wait to experience Yves Saint Laurent cologne for
-            men or perfume for women. Simply browse our website for the products
-            that you currently use or want to try.
-          </p>
-          <button
-            onClick={() => navigate("/fragrance/all")}
-            className="amouage-btn"
-          >
-            view the collection
-          </button>
-        </div>
-      </SwiperSlide>
-    </Swiper>
+      <div
+        data-aos="fade-left"
+        data-aos-duration="1500"
+        className="swiper-info-div"
+      >
+        <h2>Choose the best scent from us</h2>
+        <p>
+          Elevate your experience with us because we dont settle for anything
+          less than the best! Where every moment is an opportunity, every
+          challenge is a stepping stone.
+        </p>
+        <button onClick={()=>navigate("/fragrance/all")}>SHOP NOW</button>
+      </div>
+    </div>
   );
 }
 

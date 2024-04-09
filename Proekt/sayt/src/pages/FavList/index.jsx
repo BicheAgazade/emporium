@@ -3,6 +3,8 @@ import { FaRegHeart } from "react-icons/fa6";
 import "./style.css";
 import { addToCartAction } from "../../Redux/Actions/cart.actions";
 import { removeFromFav } from "../../Redux/Actions/fav.actions";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function FavList() {
   const { favList } = useSelector((state) => state);
@@ -19,13 +21,16 @@ function FavList() {
           favList.map((item) => (
             <div key={item.id} className="fav-product-div">
               <img className="fav-main-img" src={item.img} alt={item.name} />
-              <span onClick={()=> dispatch(removeFromFav(item))} className="delete-fav">&times;</span>
+              <span onClick={()=>{ dispatch(removeFromFav(item))
+                toast.error("Product removed from favlist!")}} className="delete-fav">&times;</span>
               <h3 className="fav-main-brand">{item.brand}</h3>
               <p className="fav-main-name">{item.name}</p>
               <p className="fav-main-price">{item.price} AZN</p>
               <button
                 className="add-to-cart"
-                onClick={() => dispatch(addToCartAction(item))}
+                onClick={() => {dispatch(addToCartAction(item))
+                 toast.success("Product successfully added to cart!");
+                }}
               >
                 ADD TO CART
               </button>

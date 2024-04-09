@@ -149,8 +149,28 @@
 .support-li{
   display: flex;
   align-items: end;
+  position: relative;
+  width: 14%;
+  justify-content: space-around;
  
+ }
+.ul-support{
+  position: absolute;
+  background-color: white;
+  z-index: 1000;
+  width: 100%;
+  top: 28px;
+ box-shadow: 0 0 20px rgba(0,0,0,.1);
+padding: 0 5px;
 }
+.ul-support li{
+ list-style-type: none;
+ font-size: 15px;
+ text-align: start;
+ margin: 15px 0;
+ color: black;
+}
+
 
 @keyframes slideIn {
   from {

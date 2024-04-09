@@ -1,0 +1,58 @@
+.bestseller-main-div{
+    margin-top: 100px;
+    display: flex;
+    border: 1px solid lightgrey;
+    
+}
+.mySwiper-bestseller{
+    width: 50%;
+    height: 750px;
+    position: relative;
+}
+
+.bestseller-slider{
+    position: relative;
+    }
+.bestseller-slider img{
+    width: 100%;
+}
+
+.bestseller-info-div{
+    position: absolute;
+    z-index: 9999;
+    bottom: 100px;
+    text-align: center;
+    
+ }
+.bestseller-info-div p{
+    font-size: 30px;
+    margin: 20px 0;
+    color: black;
+}
+
+.bestseller-info-div h2{
+    font-size: 85px;
+    letter-spacing: 4px;
+    color: white;
+  }
+
+.bestseller-info-div button{
+  margin-top: 30px;
+background-color:transparent;
+color: black;
+padding:10px 40px;
+border-radius: 8px;
+border: 1px solid black;
+font-weight: bold;
+transition: 0.5s;
+}
+.bestseller-info-div button:hover{
+  cursor: pointer;
+background-color: black;
+color: white;
+}
+.bestseller-product-div{
+    width: 50%;
+    height: 400px;
+    background-color: black;
+}

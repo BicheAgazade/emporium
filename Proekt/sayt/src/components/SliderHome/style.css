@@ -1,96 +1,56 @@
-.mySwiper-2 {
+.swiper-div-home{
   width: 100%;
+  background-color: rgba(225, 204, 204, 0.168);
   height: 600px;
-  margin-top: 120px;
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+ }
+.mySwiper-2{
+ width:40%;
+ height: 500px;
+ margin-left: 100px;
 }
+.swiper-info-div{
+width: 40%;
+margin-right: 100px;
+color: black;
+ text-align: center;
+}
+.swiper-info-div h2{
+font-size: 38px;
+letter-spacing: 4px;
+margin-bottom: 50px;
 
-.slider-2 img {
-  display: block;
+}
+.swiper-info-div p{
+font-size: 18px;
+line-height: 35px;
+width: 70%;
+margin: 20px auto;
+
+}
+.swiper-info-div button{
+ margin-top: 30px;
+background-color:transparent;
+color: black;
+padding:10px 40px;
+border-radius: 8px;
+border: 1px solid black;
+font-weight: bold;
+transition: 0.5s;
+}
+.swiper-info-div button:hover{
+  cursor: pointer;
+background-color: black;
+color: white;
+}
+.swiper-slider-home{
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+.swiper-slider-home img{
+ display: block;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.swiper-button-prev,
-.swiper-button-next {
-  color: black !important;
-}
-.swiper-button-prev:hover,
-.swiper-button-next:hover {
-  color: #999 !important;
-}
-
-.slider-2 {
-  position: relative;
-}
-
-.chloe-div {
-  position: absolute;
-  width: 30%;
-  bottom: 100px;
-  right: 50px;
-  z-index: 999;
-  text-align: justify;
-}
-.chloe-div p,
-.mancera-div p,
-.amouage-div p,
-.ysl-div p {
-  line-height: 25px;
-  margin: 15px 0;
-  font-size: 18px;
-}
-.chloe-div h2,
-.ysl-div h2 {
-  color: rgb(227, 207, 207);
-}
-
-.chloe-btn,
-.amouage-btn {
-  background-color: transparent;
-  border: 1px solid black;
-  padding: 5px 25px;
-  border-radius: 8px;
-  transition: 0.5s;
-  font-size: 15px;
-}
-
-.chloe-btn:hover {
-  background-color: rgb(227, 207, 207);
-  color: black;
-  border: 1px solid rgb(227, 207, 207);
-  cursor: pointer;
-}
-
-.mancera-div,
-.ysl-div {
-  position: absolute;
-  width: 30%;
-  top: 100px;
-  left: 50px;
-  z-index: 999;
-  text-align: justify;
-}
-.amouage-div {
-  position: absolute;
-  width: 30%;
-  bottom: 100px;
-  right: 50px;
-  z-index: 999;
-  text-align: justify;
-}
-.amouage-div p,
-.ysl-div p {
-  color: white;
-}
-.amouage-div h2 {
-  color: white;
-}
-.amouage-btn {
-  border: 1px solid white;
-  color: white;
-}
-.amouage-btn:hover {
-  cursor: pointer;
-  background-color: black;
-  border: 1px solid black;
-}
+  }

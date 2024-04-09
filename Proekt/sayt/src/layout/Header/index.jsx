@@ -7,16 +7,24 @@ import { IoIosSearch } from "react-icons/io";
 import FavBadge from "./favlist.counter";
 import { useCategory } from "../../CategoryContext";
 import { useSelector } from "react-redux";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { HiOutlineMenu } from "react-icons/hi";
 import { IoCloseSharp } from "react-icons/io5";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import { MdKeyboardArrowUp } from "react-icons/md";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 function Header() {
   const navigate = useNavigate();
   const { favList } = useSelector((state) => state);
   const [menuOpen, setMenuOpen] = useState(false);
-  const [arrow, setArrow] = useState(true);
+  const [showHelp, setShowHelp] = useState(false);
+
+useEffect(() => {
+  AOS.init();
+  AOS.refresh();
+}, []);
 
   const { categoryTitle, searchValue, setSearchValue, handelSearch } =
     useCategory();
@@ -24,10 +32,6 @@ function Header() {
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
-
-  const arrowOpenFunc=()=>{
-    setArrow(!arrow)
-  }
 
   return (
     <nav className="main-header-div">
@@ -104,10 +108,26 @@ function Header() {
               {item.title}
             </li>
           ))}
-          <li onMouseOut={arrowOpenFunc} onMouseEnter={arrowOpenFunc} className="support-li">
-            Support {arrow?<MdOutlineKeyboardArrowDown />:<MdKeyboardArrowUp/>}
+
+          <li
+            onMouseEnter={() => setShowHelp(true)}
+            onMouseLeave={() => setShowHelp(false)}
+            className="support-li"
+          >
+            Support
+            {showHelp ? <MdKeyboardArrowUp /> : <MdOutlineKeyboardArrowDown />}
+            {showHelp && (
+              <ul data-aos="zoom-in" className="ul-support">
+                <li onClick={() => navigate("/gift-cards")}>Gift Cards</li>
+                <li onClick={() => navigate("/loyalty")}>Loyalty</li>
+                <li onClick={() => navigate("/faq")}>FAQ</li>
+                <li onClick={() => navigate("/delivery")}>Delivery</li>
+                <li onClick={() => navigate("/returns")}>Return/Exchange</li>
+                <li onClick={() => navigate("/paymant")}>Payment</li>
+              </ul>
+            )}
           </li>
-          <li>Contact Us</li>
+          <li onClick={() => navigate("/contacts")}>Contact Us</li>
         </div>
       </div>
     </nav>

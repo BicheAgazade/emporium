@@ -1,5 +1,5 @@
 .main-depart-div {
-  width: 90%;
+  width: 80%;
   margin: 120px auto;
 }
 .inner-depart-div {
@@ -43,7 +43,7 @@
 
 .section-p {
   position: absolute;
-  font-size: 40px;
+  font-size: 36px;
   letter-spacing: 5px;
   font-weight: bold;
   color: black;
