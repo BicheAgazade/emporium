@@ -6,6 +6,10 @@ import returns from "./imegs/return-large.jpg";
 import faq from "./imegs/faq-large.jpg";
 import loyalty from "./imegs/loyalty-large.jpg";
 import contact from "./imegs/contact-large.jpg";
+import woman from "./imegs/wom2.jpg";
+import man from "./imegs/man.png";
+import all from "./imegs/allfrag.jpg";
+import unisex from "./imegs/unisex2.jpg";
 import { useNavigate } from "react-router";
 import axios from "axios";
 
@@ -75,10 +79,10 @@ export const CategoryProvider = ({ children }) => {
   ];
 
   const categoryTitle = [
-    { title: "Fragrance", category: "all" },
-    { title: "For Woman", category: "woman" },
-    { title: "For Man", category: "man" },
-    { title: "Unisex", category: "unisex" },
+    { title: "Fragrance", category: "all", img: all },
+    { title: "For Woman", category: "woman", img: woman },
+    { title: "For Man", category: "man", img: man },
+    { title: "Unisex", category: "unisex", img: unisex },
   ];
   const scrollToTop = () => {
     window.scrollTo({

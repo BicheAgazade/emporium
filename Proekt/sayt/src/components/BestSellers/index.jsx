@@ -8,20 +8,28 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useCategory } from "../../CategoryContext";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { useDispatch } from "react-redux";
+import { addToCartAction } from "../../Redux/Actions/cart.actions";
+
 
 function BestSeller(){
-
+     const dispatch = useDispatch();
      const navigate = useNavigate();
-     const { scrollToTop } = useCategory();
+     const { scrollToTop, product } = useCategory();
 
      useEffect(() => {
        AOS.init();
        AOS.refresh();
      }, []);
+
+    let bestproduct = product.filter((item) => item.bestseller=== true);
+   
     return (
       <div className="bestseller-main-div">
         <Swiper
-          autoplay={{ delay: 10000 }}
+          autoplay={{ delay: 3000}}
           loop={true}
           pagination={{
             dynamicBullets: true,
@@ -77,8 +85,22 @@ function BestSeller(){
           </SwiperSlide>
         </Swiper>
 
-        <div className="bestseller-product-div">
-            
+        <div className="bestseller-main-product-div">
+          <div className="bestseller-inner-product-div">
+            {bestproduct.map((item) => (
+              <div className="bestseller-product-div" key={item.id}>
+                <img onClick={()=>{
+                    navigate(`/details/${item.id}`)
+                    scrollToTop()
+                }} src={item.img} alt="" />
+                <h2>{item.brand}</h2>
+                <p>{item.price} AZN</p>
+                <button onClick={()=> {dispatch(addToCartAction(item));
+                toast.success("Product successfully added to cart!")}}>ADD TO CART</button>
+                <span>Best Seller!</span>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     );

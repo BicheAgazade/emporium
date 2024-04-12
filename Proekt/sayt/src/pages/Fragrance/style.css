@@ -1,9 +1,21 @@
 .fragrance-content {
-  width: 80%;
-  margin: 150px auto;
+  width: 100%;
+  margin: 80px auto;
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+.category-img-title-div{
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
+}
+.category-img-title-div img{
+  width: 100%;
+  
+}
+.category-img-title-div h3{
+  
 }
 .fragrance-filter {
   width: 20%;
@@ -11,9 +23,11 @@
 }
 
 .fragrance-card {
+  width: 80%;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  margin: 0 auto;
 }
 .fragrance-h2-title {
   margin: 1%;
@@ -27,7 +41,8 @@
   justify-content: space-between;
   padding: 1%;
   align-items: center;
-  margin-bottom: 70px;
+  margin: 70px auto;
+  width: 80%;
 }
 .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
   border-color: black !important;

@@ -4,7 +4,6 @@ import "./style.css";
 import axios from "axios";
 import { Link, useParams } from "react-router-dom";
 import { useCategory } from "../../CategoryContext";
-
 import Box from "@mui/material/Box";
 import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
@@ -74,6 +73,15 @@ function Fragrance() {
   return (
     <div className="fragrance-content">
       <div>
+        <div className="category-img-title-div">
+          <img
+            src={categoryTitle.find((item) => item.category === category).img}
+            alt={categoryTitle.find((item) => item.category === category).img}
+          />
+          <h3>
+            {categoryTitle.find((item) => item.category === category).title}
+          </h3>
+        </div>
         <div className="h2-filter-div">
           <h2 className="fragrance-h2-title">
             <Link to="/">Home</Link> /

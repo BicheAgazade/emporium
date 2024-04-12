@@ -1,134 +1,4 @@
 {
-  "designers": [
-    {
-      "id": "1",
-      "name": "Alexandre.J"
-    },
-    {
-      "id": "2",
-      "name": "BDK"
-    },
-    {
-      "id": "3",
-      "name": "Chloe"
-    },
-    {
-      "id": "4",
-      "name": "Estee Lauder"
-    },
-    {
-      "id": "5",
-      "name": "Giorgio Armani"
-    },
-    {
-      "id": "6",
-      "name": "HFC"
-    },
-    {
-      "id": "7",
-      "name": "Initio"
-    },
-    {
-      "id": "8",
-      "name": "Jo Malone"
-    },
-    {
-      "id": "9",
-      "name": "Kilian"
-    },
-    {
-      "id": "10",
-      "name": "Lancome"
-    },
-    {
-      "id": "11",
-      "name": "Amouage"
-    },
-    {
-      "id": "12",
-      "name": "Boss"
-    },
-    {
-      "id": "13",
-      "name": "Boadicea the Victorious"
-    },
-    {
-      "id": "14",
-      "name": "Etro"
-    },
-    {
-      "id": "15",
-      "name": "Givenchy"
-    },
-    {
-      "id": "16",
-      "name": "Jimmy Choo"
-    },
-    {
-      "id": "17",
-      "name": "Mancera"
-    },
-    {
-      "id": "18",
-      "name": "Montale"
-    },
-    {
-      "id": "19",
-      "name": "Memo"
-    },
-    {
-      "id": "20",
-      "name": "Maison Margiela"
-    },
-    {
-      "id": "21",
-      "name": "Nasomatto"
-    },
-    {
-      "id": "22",
-      "name": "Nishane"
-    },
-    {
-      "id": "23",
-      "name": "Orlov"
-    },
-    {
-      "id": "24",
-      "name": "Ojar"
-    },
-    {
-      "id": "25",
-      "name": "Orto Parisi"
-    },
-    {
-      "id": "26",
-      "name": "Prada"
-    },
-    {
-      "id": "27",
-      "name": "Yves Saint Laurent"
-    },
-    {
-      "id": "28",
-      "name": "Tiziana Terenzi"
-    },
-    {
-      "id": "29",
-      "name": "Tom Ford"
-    },
-    {
-      "id": "30",
-      "name": "Valentino"
-    },
-    {
-      "id": "31",
-      "name": "V-Canto"
-    },
-    {
-      "id": "32",
-      "name": "Widian by AJ Arabia"
-    }
-  ],
   "product": [
     {
       "brand": "Alexandre.J",
@@ -140,10 +10,9 @@
         "Middle notes are Rose, White Woods, Patchouli and Saffron",
         "Base notes are Musk, Vanilla and Amber"
       ],
-      "designerId": 1,
       "category": "woman",
       "new": true,
-      "bestseller": false,
+      "bestseller": true,
       "img": "https://cdn2.emporium.az/i/p/500/239099-746213cd70d7b6b3ce86c0ce423ac685.jpg",
       "imegs": [
         "https://cdn2.emporium.az/i/p/500/239099-746213cd70d7b6b3ce86c0ce423ac685.jpg",
@@ -162,7 +31,6 @@
         "Middle notes are quince, moroccan jasmine and orange blossom",
         "Base notes are cashmeran, amberwood and singapore patchouli"
       ],
-      "designerId": 2,
       "category": "woman",
       "new": false,
       "bestseller": true,
@@ -183,7 +51,7 @@
         "Middle notes: Jasmine, Tuberose and Orange Blossom",
         "Middle notes: Jasmine, Tuberose and Orange Blossom"
       ],
-      "designerId": 2,
+     
       "category": "unisex",
       "new": false,
       "bestseller": true,
@@ -204,7 +72,7 @@
         "Middle notes: orange blossom, stephanotis, rose, peach, black currant",
         "Base notes: musk, cedar, cashmirwood, patchouli"
       ],
-      "designerId": 3,
+     
       "category": "woman",
       "new": false,
       "bestseller": true,
@@ -224,7 +92,7 @@
         "Middle notes: are lily-of-the-valley, peony, lilac, lily, rose, jasmine, geranium and karo karounde",
         "Base notes: are musk, cedar, sandalwood and patchouli"
       ],
-      "designerId": 4,
+   
       "category": "woman",
       "new": true,
       "bestseller": false,
@@ -244,7 +112,7 @@
         "Middle notes: are iris pallida, indian tuberose and ambrette (musk mallow)",
         "Base notes: are white musk, bourbon vanilla, and cedar"
       ],
-      "designerId": 5,
+    
       "category": "woman",
       "new": false,
       "bestseller": true,
@@ -265,7 +133,7 @@
         "Middle notes: Hemp, Dates, Magnolia, Ambergris",
         "Base notes: Oud, Sandalwood"
       ],
-      "designerId": 6,
+   
       "category": "unisex",
       "new": true,
       "bestseller": false,
@@ -287,7 +155,7 @@
         "Middle notes: are Licorice, Agarwood (Oud) and Cedar",
         "Base notes: are Vanilla, Musk and Herbal Notes"
       ],
-      "designerId": 7,
+    
       "category": "unisex",
       "new": false,
       "bestseller": true,
@@ -308,7 +176,7 @@
         "Middle notes:  Freesia, Rose",
         "Base notes: Musk, Patchouli, Rhubarb, Amber"
       ],
-      "designerId": 8,
+    
       "category": "woman",
       "new": false,
       "bestseller": true,
@@ -327,7 +195,7 @@
       "notes": [
         "Kilian Apple Brandy On The Rocks is a refreshing fruity fruity unisex fragrance launched in 2021 by French perfume house Kilian. With this fragrance, the brand expands The Liquors perfume collection, inspired by the rich aromas of alcoholic beverages. At the same time, fresh notes, reminiscent of a sip of sparkling citrus, water notes or refreshing aldehydes, bring freshness, lightness and serenity to these compositions."
       ],
-      "designerId": 9,
+   
       "category": "unisex",
       "new": false,
       "bestseller": true,
@@ -347,7 +215,7 @@
         "Middle notes: peony and roses from grasse compliment this iris gourmand to create a floral, rose blooming heart",
         "Base notes: sandalwood oil and patchouli add creaminess and sensuality to the dry down, and the addition of musk giving a soft, second-skin effect"
       ],
-      "designerId": 10,
+      
       "category": "woman",
       "new": true,
       "bestseller": false,
@@ -368,7 +236,7 @@
         "Middle notes: vetiver",
         "Base notes: cade"
       ],
-      "designerId": 11,
+     
       "category": "man",
       "new": true,
       "bestseller": false,
@@ -388,7 +256,7 @@
         "Middle notes:  Cinnamon, Mahogany, Cloves",
         "Base notes: Vanilla, Sandalwood, Cedar, Vetiver, Olive tree"
       ],
-      "designerId": 12,
+     
       "category": "man",
       "new": false,
       "bestseller": true,
@@ -408,7 +276,7 @@
         "Middle notes:  rosemary, black pepper",
         "Base notes: musk, amber, sandalwood"
       ],
-      "designerId": 13,
+   
       "category": "unisex",
       "new": true,
       "bestseller": false,
@@ -429,7 +297,7 @@
         "Middle notes:  mimosa, damask rose, white locust and black currant",
         "Base notes: are white musk, amber & labdanum"
       ],
-      "designerId": 14,
+      
       "category": "woman",
       "new": true,
       "bestseller": false,
@@ -449,7 +317,7 @@
         "Middle notes: peony, apple, blackcurrant, raspberry and rose",
         "Base notes: are cocoa, vanilla, musk, cashmeran & amberwood"
       ],
-      "designerId": 15,
+      
       "category": "woman",
       "new": false,
       "bestseller": true,
@@ -469,7 +337,7 @@
         "Middle notes: rose, sweet pea",
         "Base notes: sandalwood, musk"
       ],
-      "designerId": 16,
+      
       "category": "woman",
       "new": false,
       "bestseller": true,
@@ -489,7 +357,7 @@
         "Middle notes: are frangipani and turkish rose",
         "Base notes: are vanilla, white musk, guaiac wood, salt and"
       ],
-      "designerId": 17,
+      
       "category": "man",
       "new": false,
       "bestseller": true,
@@ -509,7 +377,7 @@
         "Middle notes: are patchouli leaf, orris, and Egyptian jasmine",
         "Base notes: are grapes, Madagascar vanilla, leather, and white musk"
       ],
-      "designerId": 18,
+     
       "category": "man",
       "new": true,
       "bestseller": false,
@@ -529,7 +397,7 @@
         "Middle notes: Oil of Primofiore lemon, Neroli blossom absolute",
         "Base notes: Clary Sage absolute, oil of Verbena, Tonka Bean absolute"
       ],
-      "designerId": 19,
+     
       "category": "unisex",
       "new": false,
       "bestseller": true,
@@ -550,7 +418,7 @@
         "Middle notes: Lily Of The Valley Accord,Jasmine Absolute,Rose Damascena Absolute",
         "Base notes: Rose Damascena Absolute,Vanilla Accord,Ambrox"
       ],
-      "designerId": 20,
+      
       "category": "woman",
       "new": false,
       "bestseller": true,
@@ -573,7 +441,7 @@
         "Middle notes: dark chocolate, tonka bean and cinnamon",
         "Base notes: oud and sandalwood"
       ],
-      "designerId": 21,
+      
       "category": "man",
       "new": true,
       "bestseller": false,
@@ -594,7 +462,7 @@
         "Middle notes: Lime, Tunisian orange blossom, Jasmine",
         "Base notes: Vetiver, Patchouli, Cedar"
       ],
-      "designerId": 22,
+     
       "category": "unisex",
       "new": true,
       "bestseller": false,
@@ -615,7 +483,7 @@
         "Middle notes: bergamot, pink pepper",
         "Base notes: bergamot, pink pepper"
       ],
-      "designerId": 23,
+   
       "category": "woman",
       "new": false,
       "bestseller": true,
@@ -635,7 +503,7 @@
         "Middle notes: Ylang-ylang, Vetiver",
         "Base notes:Cinnamon Leaf, Patchouli, Incense, Leather"
       ],
-      "designerId": 24,
+    
       "category": "unisex",
       "new": true,
       "bestseller": false,
@@ -656,7 +524,7 @@
         "Middle notes: lavender, lily of the valley, orange blossom",
         "Base notes: cedar, musk, tonka"
       ],
-      "designerId": 25,
+     
       "category": "woman",
       "new": true,
       "bestseller": false,
@@ -677,7 +545,7 @@
         "Middle notes: Geranium, Iris, Pepper",
         "Base notes: Amber, Cedar Wood, Patchouli"
       ],
-      "designerId": 26,
+    
       "category": "man",
       "new": true,
       "bestseller": false,
@@ -698,7 +566,7 @@
         "Middle notes: Lavender, Mandarin, Blackcurrant, Petitgrain",
         "Base notes: Madagascar vanilla, Musk, Cedar, Ambergris"
       ],
-      "designerId": 27,
+     
       "category": "woman",
       "new": false,
       "bestseller": true,
@@ -719,7 +587,7 @@
         "Middle notes: Guryun Balsam, Amyris, Nagarmotha, Vanilla Flower",
         "Base notes: Laotian oud, Madagascar vanilla, Ambergris, Musk, Cambodian oud, Indian oud"
       ],
-      "designerId": 28,
+     
       "category": "unisex",
       "new": true,
       "bestseller": false,
@@ -740,7 +608,7 @@
         "Middle notes: sandalwood, cardamom, vanilla",
         "Base notes: sichuan pepper, vetiver, tonka bean, amber"
       ],
-      "designerId": 29,
+      
       "category": "man",
       "new": false,
       "bestseller": true,
@@ -760,7 +628,7 @@
         "Middle notes: jasmine, jasmine sambac and jasmine tea",
         "Base notes: jasmine, jasmine sambac and jasmine tea"
       ],
-      "designerId": 30,
+      
       "category": "woman",
       "new": true,
       "bestseller": false,
@@ -783,7 +651,7 @@
         "Middle notes: Jasmine, Coffee, Cocoa, Amber and Clove (spice)",
         "Base notes: jasmine, jasmine sambac and jasmine tea"
       ],
-      "designerId": 31,
+    
       "category": "man",
       "new": false,
       "bestseller": true,
@@ -804,7 +672,7 @@
         "Middle notes: Rose, sandal wood and musk",
         "Base notes: Vanilla and moss"
       ],
-      "designerId": 32,
+    
       "category": "unisex",
       "new": true,
       "bestseller": false,
