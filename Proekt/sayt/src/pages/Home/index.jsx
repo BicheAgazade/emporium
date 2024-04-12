@@ -33,10 +33,12 @@ const { scrollToTop } = useCategory();
           <div className="line"></div>
         </div>
 
-        <div className="main-depart-img-div">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1800"
+          className="main-depart-img-div"
+        >
           <div
-           data-aos="fade-up"
-     data-aos-duration="1500"
             onClick={() => {
               navigate("/fragrance/woman");
               scrollToTop();
@@ -48,8 +50,6 @@ const { scrollToTop } = useCategory();
             <div className="dark-depr-div"></div>
           </div>
           <div
-           data-aos="fade-up"
-     data-aos-duration="1500"
             onClick={() => {
               navigate("/fragrance/man");
               scrollToTop();
@@ -61,8 +61,6 @@ const { scrollToTop } = useCategory();
             <div className="dark-depr-div"></div>
           </div>
           <div
-          data-aos="fade-up"
-     data-aos-duration="1500"
             onClick={() => {
               navigate("/fragrance/unisex");
               scrollToTop();
@@ -74,8 +72,6 @@ const { scrollToTop } = useCategory();
             <div className="dark-depr-div"></div>
           </div>
           <div
-          data-aos="fade-up"
-     data-aos-duration="1500"
             onClick={() => {
               navigate("/fragrance/all");
               scrollToTop();

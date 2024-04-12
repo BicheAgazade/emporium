@@ -2,7 +2,9 @@ import axios from "axios";
 import { useCategory } from "../../CategoryContext";
 import FooterHeader from "../../components/FooterHeader";
 import { FaWhatsapp } from "react-icons/fa6";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function ContactUs() {
   const [formData, setFormData] = useState({
@@ -15,8 +17,6 @@ function ContactUs() {
 
   const { infoTitle } = useCategory();
   const foundTitle = infoTitle.find((item) => item.category === "contacts");
-
-
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -54,11 +54,19 @@ function ContactUs() {
     const { name, value } = e.target;
     setFormData((prevData) => ({ ...prevData, [name]: value }));
   };
+   useEffect(() => {
+     AOS.init();
+     AOS.refresh();
+   }, []);
 
   return (
     <div>
       <FooterHeader infoTitle={foundTitle} />
-      <div className="footer-contact-div">
+      <div
+        data-aos="fade-up"
+        data-aos-duration="1800"
+        className="footer-contact-div"
+      >
         <h2 className="footer-contact-h2">Contact us</h2>
         <hr className="contact-hr" />
         <div className="footer-contact-info-div">

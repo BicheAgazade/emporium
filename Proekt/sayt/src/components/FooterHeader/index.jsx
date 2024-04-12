@@ -1,13 +1,27 @@
 import "./style.css";
 import { useCategory } from "../../CategoryContext";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 function FooterHeader({ infoTitle }) {
   const { selectedSection, handleCategoryClick } = useCategory();
 
+   useEffect(() => {
+     AOS.init();
+     AOS.refresh();
+   }, []);
+
   return (
     <div className="footer-header-main-div">
       <div className="footer-inner-main-div" key={infoTitle.category}>
-        <img src={infoTitle.img} alt="" />
+        <div className="footer-inner-image-div">
+          <img src={infoTitle.img} alt="" />
+          <h1 data-aos="fade-up" data-aos-duration="1800">
+            {infoTitle.title}
+          </h1>
+          <div className="dark-footer-div"></div>
+        </div>
 
         <div className="footer-header-title-div">
           <h2>{infoTitle.title}</h2>

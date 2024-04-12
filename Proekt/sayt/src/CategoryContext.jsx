@@ -67,7 +67,7 @@ export const CategoryProvider = ({ children }) => {
       img: faq,
     },
     {
-      title: "Loyalty program",
+      title: "LOYALTY PROGRAM",
       category: "loyalty",
       img: loyalty,
     },

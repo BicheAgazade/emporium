@@ -1,14 +1,25 @@
 import { useCategory } from "../../CategoryContext";
 import FooterHeader from "../../components/FooterHeader";
 import NeedHelp from "../../components/NeedHelp";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 function Loyalty() {
   const { infoTitle } = useCategory();
   const foundTitle = infoTitle.find((item) => item.category === "loyalty");
+    useEffect(() => {
+      AOS.init();
+      AOS.refresh();
+    }, []);
   return (
     <div>
       <FooterHeader infoTitle={foundTitle} />
-      <div className="footer-category-info-div">
+      <div
+        data-aos="fade-up"
+        data-aos-duration="1800"
+        className="footer-category-info-div"
+      >
         <div className="footer-category-inner-info-div">
           <h2 className="footer-category-title-h2">CONDITIONS</h2>
           <p className="footer-category-info-p">

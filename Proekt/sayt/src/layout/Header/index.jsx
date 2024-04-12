@@ -20,18 +20,15 @@ function Header() {
   const { favList } = useSelector((state) => state);
   const [menuOpen, setMenuOpen] = useState(false);
   const [showHelp, setShowHelp] = useState(false);
-
-useEffect(() => {
-  AOS.init();
-  AOS.refresh();
-}, []);
-
-  const { categoryTitle, searchValue, setSearchValue, handelSearch } =
-    useCategory();
-
-  const toggleMenu = () => {
+  const {handleCategoryClick, categoryTitle, searchValue, setSearchValue, handelSearch } = useCategory();
+    const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
+
 
   return (
     <nav className="main-header-div">
@@ -118,12 +115,29 @@ useEffect(() => {
             {showHelp ? <MdKeyboardArrowUp /> : <MdOutlineKeyboardArrowDown />}
             {showHelp && (
               <ul data-aos="zoom-in" className="ul-support">
-                <li onClick={() => navigate("/gift-cards")}>Gift Cards</li>
-                <li onClick={() => navigate("/loyalty")}>Loyalty</li>
-                <li onClick={() => navigate("/faq")}>FAQ</li>
-                <li onClick={() => navigate("/delivery")}>Delivery</li>
-                <li onClick={() => navigate("/returns")}>Return/Exchange</li>
-                <li onClick={() => navigate("/paymant")}>Payment</li>
+                <li onClick={() => handleCategoryClick("gift-cards")}
+                >
+                  Gift Cards
+                </li>
+                <li onClick={() => handleCategoryClick("loyalty")}
+                >
+                  Loyalty
+                </li>
+                <li onClick={() => handleCategoryClick("faq")}
+                >
+                  FAQ
+                </li>
+                <li onClick={() => handleCategoryClick("delivery")}
+                >
+                  Delivery
+                </li>
+                <li  onClick={() => handleCategoryClick("returns")}
+                >
+                  Return/Exchange
+                </li>
+                <li onClick={() => handleCategoryClick("paymant")}>
+                  Payment
+                </li>
               </ul>
             )}
           </li>

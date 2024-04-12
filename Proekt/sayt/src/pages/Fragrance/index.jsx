@@ -19,17 +19,17 @@ function Fragrance() {
   const [filterNew, setFilterNew] = useState(false);
   const [filterBestseller, setFilterBestseller] = useState(false);
   const [filterAll, setFilterAll] = useState(false);
-
+ 
   const handleChange = (e) => {
     const value = e.target.value;
     setSortOption(value);
     setFilterNew(value === "new");
     setFilterBestseller(value === "bestseller");
     setFilterAll(value === "all");
-  };
+   };
 
   useEffect(() => {
-    axios
+  axios
       .get(
         `http://localhost:3000/product?${
           category !== "all" ? "category=" + category : ""
@@ -38,11 +38,13 @@ function Fragrance() {
       .then(({ data }) => {
         setOriginalData(data);
         setFilteredData(data);
+        
       })
       .catch((err) => console.log("Error fetching products:", err));
   }, [category]);
 
   useEffect(() => {
+     
     let newData = [...originalData];
 
     if (filterNew) {
@@ -68,7 +70,12 @@ function Fragrance() {
     }
 
     setFilteredData(newData);
+    
+   
   }, [sortOption, originalData, filterNew, filterBestseller, filterAll]);
+
+
+
 
   return (
     <div className="fragrance-content">
@@ -78,9 +85,12 @@ function Fragrance() {
             src={categoryTitle.find((item) => item.category === category).img}
             alt={categoryTitle.find((item) => item.category === category).img}
           />
-          <h3>
-            {categoryTitle.find((item) => item.category === category).title}
-          </h3>
+         
+            <h1>
+              {categoryTitle.find((item) => item.category === category).title}
+            </h1>
+      
+          <div className="dark-category-div"></div>
         </div>
         <div className="h2-filter-div">
           <h2 className="fragrance-h2-title">
