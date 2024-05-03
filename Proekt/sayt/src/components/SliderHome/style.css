@@ -54,3 +54,62 @@ color: white;
  display: block;
   width: 100%;
   }
+
+
+  @media only screen and (min-width: 768px) and (max-width: 1248px) {
+.mySwiper-2{
+height: 400px ;
+ margin-left: 50px;
+}
+.swiper-info-div h2{
+font-size: 30px;
+margin-bottom: 20px;
+}
+.swiper-info-div p{
+font-size: 18px;
+line-height: 30px;
+}
+.swiper-info-div button{
+ margin-top: 20px;
+}
+}
+
+@media only screen and (max-width: 767px) {
+  
+.swiper-div-home{
+  height: 400px;
+  margin-top: 50px;
+  }
+.mySwiper-2{
+height: 200px;
+ margin-left: 50px;
+}
+.swiper-info-div{
+margin-right: 20px;
+}
+.swiper-info-div h2{
+font-size: 25px;
+letter-spacing: 3px;
+margin-bottom: 20px;
+}
+.swiper-info-div p{
+font-size: 15px;
+line-height: 25px;
+width: 100%;
+margin: 0px auto;
+}
+.swiper-info-div button{
+ margin-top: 20px;
+ font-size: 12px;
+}
+.swiper-slider-home{
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+.swiper-slider-home img{
+ display: block;
+  width: 100%;
+  }
+
+}

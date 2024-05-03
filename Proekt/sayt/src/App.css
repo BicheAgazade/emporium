@@ -109,37 +109,7 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1248px) {
-  .main-depart-div {
-    margin: 60px auto;
-  }
-  .inner-depart-div {
-    flex-direction: flex;
-    align-items: center;
-  }
-  .line {
-    width: 30%;
-  }
-  .depart-span {
-    font-size: 24px;
-  }
-  .main-depart-img-div {
-    margin: 10px auto 50px;
-  }
-  .inner-depart-img-div {
-    margin: 10px auto;
-  }
-  .section-p {
-    font-size: 24px;
-  }
-  .new-arrival-h2 {
-    font-size: 28px;
-    margin: 20px auto;
-  }
-  .new-product {
-    margin: 60px 0;
-  }
-
-  .inner-firts-footer-div {
+ .inner-firts-footer-div {
     width: 33%;
     margin: 1%;
   }
@@ -172,41 +142,10 @@
     font-size: 18px;
   }
   .logo-div {
-    width: 50%;
+    width: 18%;
   }
   .header-btn li {
-    font-size: 22px;
-  }
-  .mySwiper-2 {
-    height: 400px;
-    margin-top: 70px;
-  }
-  .chloe-div p,
-  .mancera-div p,
-  .amouage-div p,
-  .ysl-div p {
-    line-height: 18px;
-    margin: 10px 0;
-    font-size: 17px;
-  }
-  .chloe-div h2,
-  .ysl-div h2,
-  .mancera-div h2,
-  .amouage-div h2 {
-    font-size: 18px;
-  }
-  .chloe-btn,
-  .amouage-btn {
-    padding: 5px 20px;
-    font-size: 15px;
-  }
-
-  .mancera-div,
-  .ysl-div,
-  .chloe-div,
-  .amouage-div {
-    top: 40px;
-    text-align: center;
+    font-size: 20px;
   }
 
   .need-help {
@@ -234,37 +173,7 @@
 }
 
 @media only screen and (max-width: 767px) {
-  .main-depart-div {
-    margin: 60px auto;
-  }
-  .inner-depart-div {
-    flex-direction: flex;
-    align-items: center;
-  }
-  .line {
-    width: 30%;
-  }
-  .depart-span {
-    font-size: 22px;
-  }
-  .main-depart-img-div {
-    margin: 10px auto 50px;
-  }
-  .inner-depart-img-div {
-    width: 100%;
-    margin: 10px auto;
-  }
-  .section-p {
-    font-size: 24px;
-  }
-  .new-arrival-h2 {
-    font-size: 28px;
-    margin: 20px auto;
-  }
-  .new-product {
-    margin: 60px 0;
-  }
-  .main-first-footer-div {
+.main-first-footer-div {
     flex-wrap: wrap;
   }
   .inner-firts-footer-div {
@@ -298,7 +207,8 @@
     width: 15%;
   }
   .logo-div {
-    width: 70%;
+    width: 50%;
+ 
   }
   .nav-icon-div {
     display: flex;
@@ -316,39 +226,7 @@
   .menu {
     display: block;
   }
-
-  .mySwiper-2 {
-    height: 400px;
-    margin-top: 70px;
-  }
-  .chloe-div p,
-  .mancera-div p,
-  .amouage-div p,
-  .ysl-div p {
-    line-height: 18px;
-    margin: 10px 0;
-    font-size: 15px;
-  }
-  .chloe-div h2,
-  .ysl-div h2,
-  .mancera-div h2,
-  .amouage-div h2 {
-    font-size: 13px;
-  }
-  .chloe-btn,
-  .amouage-btn {
-    padding: 5px 20px;
-    font-size: 12px;
-  }
-
-  .mancera-div,
-  .ysl-div,
-  .chloe-div,
-  .amouage-div {
-    top: 40px;
-    text-align: center;
-  }
-  .footer-category-info-div {
+.footer-category-info-div {
     display: block;
   }
   .footer-category-inner-info-div {

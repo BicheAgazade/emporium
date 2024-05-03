@@ -97,6 +97,7 @@ function Header() {
           </Link>
         </div>
         <div className="header-btn">
+          <li onClick={()=>navigate("/")}>Home</li>
           {categoryTitle.map((item) => (
             <li
               onClick={() => navigate(`/fragrance/${item.category}`)}

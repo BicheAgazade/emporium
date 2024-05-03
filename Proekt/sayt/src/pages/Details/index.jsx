@@ -16,6 +16,8 @@ import { addToCartAction } from "../../Redux/Actions/cart.actions";
 import { addToFavAction, removeFromFav } from "../../Redux/Actions/fav.actions";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Details() {
   const [obj, setObj] = useState({});
@@ -42,6 +44,11 @@ function Details() {
     setChangeHeart(true);
       toast.success("Product successfully added to favlist!");
   };
+
+    useEffect(() => {
+      AOS.init();
+      AOS.refresh();
+    }, [showDscp]);
 
   return (
     <div className="details-main-div">
@@ -81,8 +88,10 @@ function Details() {
         <p className="details-info-p">SIZE: {obj.size}</p>
         <div className="details-btn-div">
           <button
-            onClick={() => {dispatch(addToCartAction(obj))
-              toast.success("Product successfully added to cart!");}}
+            onClick={() => {
+              dispatch(addToCartAction(obj));
+              toast.success("Product successfully added to cart!");
+            }}
             className="details-add-to-cart"
           >
             ADD TO CART
@@ -93,7 +102,7 @@ function Details() {
               <FaHeart
                 onClick={() => {
                   setChangeHeart(false);
-                  dispatch(removeFromFav(obj))
+                  dispatch(removeFromFav(obj));
                   toast.error("Product removed from favlist!");
                 }}
                 className="details-heart-div favorited"
@@ -126,7 +135,11 @@ function Details() {
             )}
           </div>
           {showDscp ? (
-            <ul>
+            <ul
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom"
+              data-aos-duration="1500"
+            >
               {obj?.notes?.map((item, index) => (
                 <li className="details-li" key={index}>
                   {item}

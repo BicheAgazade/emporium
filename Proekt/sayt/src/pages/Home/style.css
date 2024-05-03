@@ -63,13 +63,27 @@
   z-index: 1001;
   transform: translate(-50%, -50%);
 }
-.new-arrival-h2 {
-  margin: 40px auto;
-  text-align: center;
-  font-size: 36px;
-  letter-spacing: 5px;
+
+@media only screen and (max-width: 767px) {
+ 
+.inner-depart-div {
+  padding-bottom: 20px;
 }
-.new-product {
-  margin: 100px 0;
+.line {
+width: 25%;
+}
+.depart-span {
+  font-size: 25px;
 }
 
+.main-depart-img-div {
+  display: flex;
+  flex-wrap: wrap;
+ }
+.inner-depart-img-div {
+  width: 48%;
+ }
+.section-p {
+font-size: 30px;
+ }
+}
