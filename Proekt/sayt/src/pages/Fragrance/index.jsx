@@ -19,6 +19,7 @@ function Fragrance() {
   const [filterNew, setFilterNew] = useState(false);
   const [filterBestseller, setFilterBestseller] = useState(false);
   const [filterAll, setFilterAll] = useState(false);
+
  
   const handleChange = (e) => {
     const value = e.target.value;
@@ -26,6 +27,8 @@ function Fragrance() {
     setFilterNew(value === "new");
     setFilterBestseller(value === "bestseller");
     setFilterAll(value === "all");
+  
+    
    };
 
   useEffect(() => {
@@ -85,11 +88,11 @@ function Fragrance() {
             src={categoryTitle.find((item) => item.category === category).img}
             alt={categoryTitle.find((item) => item.category === category).img}
           />
-         
-            <h1>
-              {categoryTitle.find((item) => item.category === category).title}
-            </h1>
-      
+
+          <h1>
+            {categoryTitle.find((item) => item.category === category).title}
+          </h1>
+
           <div className="dark-category-div"></div>
         </div>
         <div className="h2-filter-div">
@@ -114,7 +117,7 @@ function Fragrance() {
                     <MenuItem value={"bestseller"}>BESTSELLER</MenuItem>
                     <MenuItem value={"asc"}>PRICE LOW TO HIGH</MenuItem>
                     <MenuItem value={"desc"}>PRICE HIGH TO LOW</MenuItem>
-                  </Select>
+                 </Select>
                 </FormControl>
               </Box>
             </label>

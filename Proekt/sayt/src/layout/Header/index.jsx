@@ -142,7 +142,8 @@ function Header() {
               </ul>
             )}
           </li>
-          <li onClick={() => navigate("/contacts")}>Contact Us</li>
+          <li onClick={() =>{ navigate("/contacts")
+           handleCategoryClick("contacts");}}>Contact Us</li>
         </div>
       </div>
     </nav>

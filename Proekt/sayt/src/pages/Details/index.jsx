@@ -24,7 +24,7 @@ function Details() {
   const [showDscp, setShowDscp] = useState(false);
   const [changeHeart, setChangeHeart] = useState(false);
   const { id } = useParams();
-  const [thumbsSwiper, setThumbsSwiper] = useState(null);
+  const [thumbsSwiper, setThumbsSwiper] = useState(null); 
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -42,13 +42,18 @@ function Details() {
   const handelAddToFav = () => {
     dispatch(addToFavAction(obj));
     setChangeHeart(true);
-      toast.success("Product successfully added to favlist!");
+    toast.success("Product successfully added to favlist!");
   };
 
-    useEffect(() => {
-      AOS.init();
-      AOS.refresh();
-    }, [showDscp]);
+  const handelRemoveFromFav = () => {
+    setChangeHeart(false);
+    dispatch(removeFromFav(obj));
+    toast.error("Product removed from favlist!");
+  };
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, [showDscp]);
 
   return (
     <div className="details-main-div">
@@ -100,11 +105,7 @@ function Details() {
           {changeHeart ? (
             <div className="details-fav-div">
               <FaHeart
-                onClick={() => {
-                  setChangeHeart(false);
-                  dispatch(removeFromFav(obj));
-                  toast.error("Product removed from favlist!");
-                }}
+                onClick={handelRemoveFromFav}
                 className="details-heart-div favorited"
               />
               <p className="details-fav-p">REMOVE FROM WISHIST</p>
